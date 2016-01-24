@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2016F9CC1C5589C600DB722B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CB1C5589C600DB722B /* main.m */; };
+		2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CE1C5589C600DB722B /* AppDelegate.m */; };
+		2016F9D21C5589C600DB722B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9D11C5589C600DB722B /* ViewController.m */; };
+		2016F9D51C5589C600DB722B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D31C5589C600DB722B /* Main.storyboard */; };
+		2016F9D71C5589C600DB722B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D61C5589C600DB722B /* Assets.xcassets */; };
+		2016F9DA1C5589C600DB722B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D81C5589C600DB722B /* LaunchScreen.storyboard */; };
+		2016F9E51C5589C700DB722B /* OverHatBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9E41C5589C700DB722B /* OverHatBooksTests.m */; };
+		2016F9F01C5589C700DB722B /* OverHatBooksUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9EF1C5589C700DB722B /* OverHatBooksUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2016F9E11C5589C700DB722B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2016F9BF1C5589C600DB722B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2016F9C61C5589C600DB722B;
+			remoteInfo = OverHatBooks;
+		};
+		2016F9EC1C5589C700DB722B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2016F9BF1C5589C600DB722B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2016F9C61C5589C600DB722B;
+			remoteInfo = OverHatBooks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2016F9C71C5589C600DB722B /* OverHatBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverHatBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2016F9CB1C5589C600DB722B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2016F9CD1C5589C600DB722B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2016F9CE1C5589C600DB722B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2016F9D01C5589C600DB722B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2016F9D11C5589C600DB722B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2016F9D41C5589C600DB722B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2016F9D61C5589C600DB722B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2016F9D91C5589C600DB722B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2016F9DB1C5589C600DB722B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2016F9E01C5589C700DB722B /* OverHatBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverHatBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2016F9E41C5589C700DB722B /* OverHatBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverHatBooksTests.m; sourceTree = "<group>"; };
+		2016F9E61C5589C700DB722B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2016F9EB1C5589C700DB722B /* OverHatBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverHatBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2016F9EF1C5589C700DB722B /* OverHatBooksUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverHatBooksUITests.m; sourceTree = "<group>"; };
+		2016F9F11C5589C700DB722B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2016F9C41C5589C600DB722B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2016F9DD1C5589C700DB722B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2016F9E81C5589C700DB722B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2016F9BE1C5589C600DB722B = {
+			isa = PBXGroup;
+			children = (
+				2016F9C91C5589C600DB722B /* OverHatBooks */,
+				2016F9E31C5589C700DB722B /* OverHatBooksTests */,
+				2016F9EE1C5589C700DB722B /* OverHatBooksUITests */,
+				2016F9C81C5589C600DB722B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2016F9C81C5589C600DB722B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2016F9C71C5589C600DB722B /* OverHatBooks.app */,
+				2016F9E01C5589C700DB722B /* OverHatBooksTests.xctest */,
+				2016F9EB1C5589C700DB722B /* OverHatBooksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2016F9C91C5589C600DB722B /* OverHatBooks */ = {
+			isa = PBXGroup;
+			children = (
+				2016F9CD1C5589C600DB722B /* AppDelegate.h */,
+				2016F9CE1C5589C600DB722B /* AppDelegate.m */,
+				2016F9D01C5589C600DB722B /* ViewController.h */,
+				2016F9D11C5589C600DB722B /* ViewController.m */,
+				2016F9D31C5589C600DB722B /* Main.storyboard */,
+				2016F9D61C5589C600DB722B /* Assets.xcassets */,
+				2016F9D81C5589C600DB722B /* LaunchScreen.storyboard */,
+				2016F9DB1C5589C600DB722B /* Info.plist */,
+				2016F9CA1C5589C600DB722B /* Supporting Files */,
+			);
+			path = OverHatBooks;
+			sourceTree = "<group>";
+		};
+		2016F9CA1C5589C600DB722B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2016F9CB1C5589C600DB722B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2016F9E31C5589C700DB722B /* OverHatBooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				2016F9E41C5589C700DB722B /* OverHatBooksTests.m */,
+				2016F9E61C5589C700DB722B /* Info.plist */,
+			);
+			path = OverHatBooksTests;
+			sourceTree = "<group>";
+		};
+		2016F9EE1C5589C700DB722B /* OverHatBooksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2016F9EF1C5589C700DB722B /* OverHatBooksUITests.m */,
+				2016F9F11C5589C700DB722B /* Info.plist */,
+			);
+			path = OverHatBooksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2016F9C61C5589C600DB722B /* OverHatBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2016F9F41C5589C700DB722B /* Build configuration list for PBXNativeTarget "OverHatBooks" */;
+			buildPhases = (
+				2016F9C31C5589C600DB722B /* Sources */,
+				2016F9C41C5589C600DB722B /* Frameworks */,
+				2016F9C51C5589C600DB722B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OverHatBooks;
+			productName = OverHatBooks;
+			productReference = 2016F9C71C5589C600DB722B /* OverHatBooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2016F9DF1C5589C700DB722B /* OverHatBooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2016F9F71C5589C700DB722B /* Build configuration list for PBXNativeTarget "OverHatBooksTests" */;
+			buildPhases = (
+				2016F9DC1C5589C700DB722B /* Sources */,
+				2016F9DD1C5589C700DB722B /* Frameworks */,
+				2016F9DE1C5589C700DB722B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2016F9E21C5589C700DB722B /* PBXTargetDependency */,
+			);
+			name = OverHatBooksTests;
+			productName = OverHatBooksTests;
+			productReference = 2016F9E01C5589C700DB722B /* OverHatBooksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2016F9EA1C5589C700DB722B /* OverHatBooksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2016F9FA1C5589C700DB722B /* Build configuration list for PBXNativeTarget "OverHatBooksUITests" */;
+			buildPhases = (
+				2016F9E71C5589C700DB722B /* Sources */,
+				2016F9E81C5589C700DB722B /* Frameworks */,
+				2016F9E91C5589C700DB722B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2016F9ED1C5589C700DB722B /* PBXTargetDependency */,
+			);
+			name = OverHatBooksUITests;
+			productName = OverHatBooksUITests;
+			productReference = 2016F9EB1C5589C700DB722B /* OverHatBooksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2016F9BF1C5589C600DB722B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Adrian Polo Alcaide";
+				TargetAttributes = {
+					2016F9C61C5589C600DB722B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2016F9DF1C5589C700DB722B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 2016F9C61C5589C600DB722B;
+					};
+					2016F9EA1C5589C700DB722B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 2016F9C61C5589C600DB722B;
+					};
+				};
+			};
+			buildConfigurationList = 2016F9C21C5589C600DB722B /* Build configuration list for PBXProject "OverHatBooks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2016F9BE1C5589C600DB722B;
+			productRefGroup = 2016F9C81C5589C600DB722B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2016F9C61C5589C600DB722B /* OverHatBooks */,
+				2016F9DF1C5589C700DB722B /* OverHatBooksTests */,
+				2016F9EA1C5589C700DB722B /* OverHatBooksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2016F9C51C5589C600DB722B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2016F9DA1C5589C600DB722B /* LaunchScreen.storyboard in Resources */,
+				2016F9D71C5589C600DB722B /* Assets.xcassets in Resources */,
+				2016F9D51C5589C600DB722B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2016F9DE1C5589C700DB722B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2016F9E91C5589C700DB722B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2016F9C31C5589C600DB722B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2016F9D21C5589C600DB722B /* ViewController.m in Sources */,
+				2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */,
+				2016F9CC1C5589C600DB722B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2016F9DC1C5589C700DB722B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2016F9E51C5589C700DB722B /* OverHatBooksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2016F9E71C5589C700DB722B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2016F9F01C5589C700DB722B /* OverHatBooksUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2016F9E21C5589C700DB722B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2016F9C61C5589C600DB722B /* OverHatBooks */;
+			targetProxy = 2016F9E11C5589C700DB722B /* PBXContainerItemProxy */;
+		};
+		2016F9ED1C5589C700DB722B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2016F9C61C5589C600DB722B /* OverHatBooks */;
+			targetProxy = 2016F9EC1C5589C700DB722B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2016F9D31C5589C600DB722B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2016F9D41C5589C600DB722B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2016F9D81C5589C600DB722B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2016F9D91C5589C600DB722B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2016F9F21C5589C700DB722B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2016F9F31C5589C700DB722B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2016F9F51C5589C700DB722B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OverHatBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adri.OverHatBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2016F9F61C5589C700DB722B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OverHatBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adri.OverHatBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2016F9F81C5589C700DB722B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OverHatBooksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adri.OverHatBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverHatBooks.app/OverHatBooks";
+			};
+			name = Debug;
+		};
+		2016F9F91C5589C700DB722B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OverHatBooksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adri.OverHatBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverHatBooks.app/OverHatBooks";
+			};
+			name = Release;
+		};
+		2016F9FB1C5589C700DB722B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OverHatBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adri.OverHatBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OverHatBooks;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2016F9FC1C5589C700DB722B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OverHatBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adri.OverHatBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OverHatBooks;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2016F9C21C5589C600DB722B /* Build configuration list for PBXProject "OverHatBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2016F9F21C5589C700DB722B /* Debug */,
+				2016F9F31C5589C700DB722B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2016F9F41C5589C700DB722B /* Build configuration list for PBXNativeTarget "OverHatBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2016F9F51C5589C700DB722B /* Debug */,
+				2016F9F61C5589C700DB722B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2016F9F71C5589C700DB722B /* Build configuration list for PBXNativeTarget "OverHatBooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2016F9F81C5589C700DB722B /* Debug */,
+				2016F9F91C5589C700DB722B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2016F9FA1C5589C700DB722B /* Build configuration list for PBXNativeTarget "OverHatBooksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2016F9FB1C5589C700DB722B /* Debug */,
+				2016F9FC1C5589C700DB722B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2016F9BF1C5589C600DB722B /* Project object */;
+}
