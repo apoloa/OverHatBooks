@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		2016F9CC1C5589C600DB722B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CB1C5589C600DB722B /* main.m */; };
 		2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CE1C5589C600DB722B /* AppDelegate.m */; };
-		2016F9D21C5589C600DB722B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9D11C5589C600DB722B /* ViewController.m */; };
-		2016F9D51C5589C600DB722B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D31C5589C600DB722B /* Main.storyboard */; };
 		2016F9D71C5589C600DB722B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D61C5589C600DB722B /* Assets.xcassets */; };
 		2016F9DA1C5589C600DB722B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D81C5589C600DB722B /* LaunchScreen.storyboard */; };
 		2016F9E51C5589C700DB722B /* OverHatBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9E41C5589C700DB722B /* OverHatBooksTests.m */; };
 		2016F9F01C5589C700DB722B /* OverHatBooksUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9EF1C5589C700DB722B /* OverHatBooksUITests.m */; };
+		2016F9FE1C5589E400DB722B /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9FD1C5589E400DB722B /* Readme.md */; };
+		2016FA011C558A2B00DB722B /* OverHatBooks.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2016FA001C558A2B00DB722B /* OverHatBooks.xml */; };
+		2016FA031C558A5800DB722B /* OverHatBooks.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016FA021C558A5800DB722B /* OverHatBooks.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +40,6 @@
 		2016F9CB1C5589C600DB722B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2016F9CD1C5589C600DB722B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2016F9CE1C5589C600DB722B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2016F9D01C5589C600DB722B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2016F9D11C5589C600DB722B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2016F9D41C5589C600DB722B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2016F9D61C5589C600DB722B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2016F9D91C5589C600DB722B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2016F9DB1C5589C600DB722B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +49,9 @@
 		2016F9EB1C5589C700DB722B /* OverHatBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverHatBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016F9EF1C5589C700DB722B /* OverHatBooksUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverHatBooksUITests.m; sourceTree = "<group>"; };
 		2016F9F11C5589C700DB722B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2016F9FD1C5589E400DB722B /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		2016FA001C558A2B00DB722B /* OverHatBooks.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OverHatBooks.xml; sourceTree = "<group>"; };
+		2016FA021C558A5800DB722B /* OverHatBooks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OverHatBooks.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,8 @@
 		2016F9BE1C5589C600DB722B = {
 			isa = PBXGroup;
 			children = (
+				2016F9FF1C558A1D00DB722B /* Docs */,
+				2016F9FD1C5589E400DB722B /* Readme.md */,
 				2016F9C91C5589C600DB722B /* OverHatBooks */,
 				2016F9E31C5589C700DB722B /* OverHatBooksTests */,
 				2016F9EE1C5589C700DB722B /* OverHatBooksUITests */,
@@ -103,9 +106,6 @@
 			children = (
 				2016F9CD1C5589C600DB722B /* AppDelegate.h */,
 				2016F9CE1C5589C600DB722B /* AppDelegate.m */,
-				2016F9D01C5589C600DB722B /* ViewController.h */,
-				2016F9D11C5589C600DB722B /* ViewController.m */,
-				2016F9D31C5589C600DB722B /* Main.storyboard */,
 				2016F9D61C5589C600DB722B /* Assets.xcassets */,
 				2016F9D81C5589C600DB722B /* LaunchScreen.storyboard */,
 				2016F9DB1C5589C600DB722B /* Info.plist */,
@@ -138,6 +138,15 @@
 				2016F9F11C5589C700DB722B /* Info.plist */,
 			);
 			path = OverHatBooksUITests;
+			sourceTree = "<group>";
+		};
+		2016F9FF1C558A1D00DB722B /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				2016FA021C558A5800DB722B /* OverHatBooks.png */,
+				2016FA001C558A2B00DB722B /* OverHatBooks.xml */,
+			);
+			name = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2016F9DA1C5589C600DB722B /* LaunchScreen.storyboard in Resources */,
+				2016FA011C558A2B00DB722B /* OverHatBooks.xml in Resources */,
+				2016FA031C558A5800DB722B /* OverHatBooks.png in Resources */,
 				2016F9D71C5589C600DB722B /* Assets.xcassets in Resources */,
-				2016F9D51C5589C600DB722B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2016F9D21C5589C600DB722B /* ViewController.m in Sources */,
 				2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */,
+				2016F9FE1C5589E400DB722B /* Readme.md in Sources */,
 				2016F9CC1C5589C600DB722B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,14 +318,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2016F9D31C5589C600DB722B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2016F9D41C5589C600DB722B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2016F9D81C5589C600DB722B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
