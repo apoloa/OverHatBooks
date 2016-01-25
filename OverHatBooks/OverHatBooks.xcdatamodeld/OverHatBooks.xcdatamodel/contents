@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
-    <entity name="Annotation" representedClassName="" syncable="YES">
+    <entity name="Annotation" representedClassName="APAnnotation" syncable="YES">
         <attribute name="creationDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
         <attribute name="modificationDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
@@ -8,7 +8,7 @@
         <relationship name="book" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="annotation" inverseEntity="Book" syncable="YES"/>
         <relationship name="photo" maxCount="1" deletionRule="Cascade" destinationEntity="Photo" inverseName="annotations" inverseEntity="Photo" syncable="YES"/>
     </entity>
-    <entity name="Book" syncable="YES">
+    <entity name="Book" representedClassName="APBook" syncable="YES">
         <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="urlImage" attributeType="String" syncable="YES"/>
         <attribute name="urlPDF" attributeType="String" syncable="YES"/>
@@ -16,11 +16,11 @@
         <relationship name="coverImage" maxCount="1" deletionRule="Cascade" destinationEntity="Cover" inverseName="book" inverseEntity="Cover" syncable="YES"/>
         <relationship name="pdfData" maxCount="1" deletionRule="Cascade" destinationEntity="PdfData" inverseName="book" inverseEntity="PdfData" syncable="YES"/>
     </entity>
-    <entity name="Cover" syncable="YES">
+    <entity name="Cover" representedClassName="APCover" syncable="YES">
         <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="coverImage" inverseEntity="Book" syncable="YES"/>
     </entity>
-    <entity name="PdfData" syncable="YES">
+    <entity name="PdfData" representedClassName="APPdfData" syncable="YES">
         <attribute name="pdfData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <relationship name="book" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="pdfData" inverseEntity="Book" syncable="YES"/>
     </entity>
