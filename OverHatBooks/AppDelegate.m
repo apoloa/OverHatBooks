@@ -7,16 +7,37 @@
 //
 
 #import "AppDelegate.h"
+#import "APBook.h"
+#import "AGTCoreDataStack.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) AGTCoreDataStack* model;
 
 @end
 
 @implementation AppDelegate
 
 
+-(void) createDummyData{
+    // Creo un libro
+    
+    APBook *b = [APBook bookWithName:@"Kamasutra"
+                            urlImage:@"jajaj"
+                              urlPDF:@"jojojo"
+                             context:self.model.context];
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.model = [AGTCoreDataStack coreDataStackWithModelName:@"OverHatBooks"];
+    
+    // Meto datos chorras
+    [self createDummyData];
+    
+    
+    
     return YES;
 }
 
