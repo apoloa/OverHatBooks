@@ -16,6 +16,7 @@
 		2016F9FE1C5589E400DB722B /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9FD1C5589E400DB722B /* Readme.md */; };
 		2016FA011C558A2B00DB722B /* OverHatBooks.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2016FA001C558A2B00DB722B /* OverHatBooks.xml */; };
 		2016FA031C558A5800DB722B /* OverHatBooks.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016FA021C558A5800DB722B /* OverHatBooks.png */; };
+		20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 20337E421C5679DB00266670 /* AGTCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		2016F9FD1C5589E400DB722B /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		2016FA001C558A2B00DB722B /* OverHatBooks.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OverHatBooks.xml; sourceTree = "<group>"; };
 		2016FA021C558A5800DB722B /* OverHatBooks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OverHatBooks.png; sourceTree = "<group>"; };
+		20337E421C5679DB00266670 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
+		20337E441C5679DF00266670 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		2016F9C91C5589C600DB722B /* OverHatBooks */ = {
 			isa = PBXGroup;
 			children = (
+				20337E411C56798200266670 /* Model */,
 				2016F9CD1C5589C600DB722B /* AppDelegate.h */,
 				2016F9CE1C5589C600DB722B /* AppDelegate.m */,
 				2016F9D61C5589C600DB722B /* Assets.xcassets */,
@@ -147,6 +151,15 @@
 				2016FA001C558A2B00DB722B /* OverHatBooks.xml */,
 			);
 			name = Docs;
+			sourceTree = "<group>";
+		};
+		20337E411C56798200266670 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20337E441C5679DF00266670 /* AGTCoreDataStack.h */,
+				20337E421C5679DB00266670 /* AGTCoreDataStack.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +295,7 @@
 			files = (
 				2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */,
 				2016F9FE1C5589E400DB722B /* Readme.md in Sources */,
+				20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */,
 				2016F9CC1C5589C600DB722B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +512,7 @@
 				2016F9F61C5589C700DB722B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2016F9F71C5589C700DB722B /* Build configuration list for PBXNativeTarget "OverHatBooksTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +521,7 @@
 				2016F9F91C5589C700DB722B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2016F9FA1C5589C700DB722B /* Build configuration list for PBXNativeTarget "OverHatBooksUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +530,7 @@
 				2016F9FC1C5589C700DB722B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
