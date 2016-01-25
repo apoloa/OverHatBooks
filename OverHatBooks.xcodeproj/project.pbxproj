@@ -17,6 +17,16 @@
 		2016FA031C558A5800DB722B /* OverHatBooks.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016FA021C558A5800DB722B /* OverHatBooks.png */; };
 		20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 20337E421C5679DB00266670 /* AGTCoreDataStack.m */; };
 		204293A71C56B45F0040240B /* OverHatBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 204293A51C56B45F0040240B /* OverHatBooks.xcdatamodeld */; };
+		204293B01C56D0C60040240B /* _APBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293A91C56D0C60040240B /* _APBook.m */; };
+		204293B11C56D0C60040240B /* _APCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293AB1C56D0C60040240B /* _APCover.m */; };
+		204293B21C56D0C60040240B /* _APPdfData.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293AD1C56D0C60040240B /* _APPdfData.m */; };
+		204293B31C56D0C60040240B /* _APPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293AF1C56D0C60040240B /* _APPhoto.m */; };
+		204293BE1C56D0D40040240B /* APAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293B51C56D0D40040240B /* APAnnotation.m */; };
+		204293BF1C56D0D40040240B /* APBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293B71C56D0D40040240B /* APBook.m */; };
+		204293C01C56D0D40040240B /* APCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293B91C56D0D40040240B /* APCover.m */; };
+		204293C11C56D0D40040240B /* APPdfData.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293BB1C56D0D40040240B /* APPdfData.m */; };
+		204293C21C56D0D40040240B /* APPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293BD1C56D0D40040240B /* APPhoto.m */; };
+		204293C51C56D0EF0040240B /* _APAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293C41C56D0EF0040240B /* _APAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,26 @@
 		20337E421C5679DB00266670 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
 		20337E441C5679DF00266670 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
 		204293A61C56B45F0040240B /* OverHatBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OverHatBooks.xcdatamodel; sourceTree = "<group>"; };
+		204293A81C56D0C60040240B /* _APBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APBook.h; sourceTree = "<group>"; };
+		204293A91C56D0C60040240B /* _APBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APBook.m; sourceTree = "<group>"; };
+		204293AA1C56D0C60040240B /* _APCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APCover.h; sourceTree = "<group>"; };
+		204293AB1C56D0C60040240B /* _APCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APCover.m; sourceTree = "<group>"; };
+		204293AC1C56D0C60040240B /* _APPdfData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APPdfData.h; sourceTree = "<group>"; };
+		204293AD1C56D0C60040240B /* _APPdfData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APPdfData.m; sourceTree = "<group>"; };
+		204293AE1C56D0C60040240B /* _APPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APPhoto.h; sourceTree = "<group>"; };
+		204293AF1C56D0C60040240B /* _APPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APPhoto.m; sourceTree = "<group>"; };
+		204293B41C56D0D40040240B /* APAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotation.h; sourceTree = "<group>"; };
+		204293B51C56D0D40040240B /* APAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAnnotation.m; sourceTree = "<group>"; };
+		204293B61C56D0D40040240B /* APBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBook.h; sourceTree = "<group>"; };
+		204293B71C56D0D40040240B /* APBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBook.m; sourceTree = "<group>"; };
+		204293B81C56D0D40040240B /* APCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCover.h; sourceTree = "<group>"; };
+		204293B91C56D0D40040240B /* APCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCover.m; sourceTree = "<group>"; };
+		204293BA1C56D0D40040240B /* APPdfData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPdfData.h; sourceTree = "<group>"; };
+		204293BB1C56D0D40040240B /* APPdfData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPdfData.m; sourceTree = "<group>"; };
+		204293BC1C56D0D40040240B /* APPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPhoto.h; sourceTree = "<group>"; };
+		204293BD1C56D0D40040240B /* APPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPhoto.m; sourceTree = "<group>"; };
+		204293C31C56D0EF0040240B /* _APAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APAnnotation.h; sourceTree = "<group>"; };
+		204293C41C56D0EF0040240B /* _APAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,11 +185,47 @@
 		20337E411C56798200266670 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				204293C71C56D1D30040240B /* Human */,
+				204293C61C56D1CE0040240B /* Machine */,
 				20337E441C5679DF00266670 /* AGTCoreDataStack.h */,
 				20337E421C5679DB00266670 /* AGTCoreDataStack.m */,
 				204293A51C56B45F0040240B /* OverHatBooks.xcdatamodeld */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		204293C61C56D1CE0040240B /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				204293C31C56D0EF0040240B /* _APAnnotation.h */,
+				204293C41C56D0EF0040240B /* _APAnnotation.m */,
+				204293A81C56D0C60040240B /* _APBook.h */,
+				204293A91C56D0C60040240B /* _APBook.m */,
+				204293AA1C56D0C60040240B /* _APCover.h */,
+				204293AB1C56D0C60040240B /* _APCover.m */,
+				204293AC1C56D0C60040240B /* _APPdfData.h */,
+				204293AD1C56D0C60040240B /* _APPdfData.m */,
+				204293AE1C56D0C60040240B /* _APPhoto.h */,
+				204293AF1C56D0C60040240B /* _APPhoto.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		204293C71C56D1D30040240B /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				204293B41C56D0D40040240B /* APAnnotation.h */,
+				204293B51C56D0D40040240B /* APAnnotation.m */,
+				204293B61C56D0D40040240B /* APBook.h */,
+				204293B71C56D0D40040240B /* APBook.m */,
+				204293B81C56D0D40040240B /* APCover.h */,
+				204293B91C56D0D40040240B /* APCover.m */,
+				204293BA1C56D0D40040240B /* APPdfData.h */,
+				204293BB1C56D0D40040240B /* APPdfData.m */,
+				204293BC1C56D0D40040240B /* APPhoto.h */,
+				204293BD1C56D0D40040240B /* APPhoto.m */,
+			);
+			name = Human;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +360,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				204293A71C56B45F0040240B /* OverHatBooks.xcdatamodeld in Sources */,
+				204293C21C56D0D40040240B /* APPhoto.m in Sources */,
+				204293BE1C56D0D40040240B /* APAnnotation.m in Sources */,
+				204293B01C56D0C60040240B /* _APBook.m in Sources */,
+				204293BF1C56D0D40040240B /* APBook.m in Sources */,
+				204293B21C56D0C60040240B /* _APPdfData.m in Sources */,
+				204293B11C56D0C60040240B /* _APCover.m in Sources */,
 				2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */,
 				20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */,
 				2016F9CC1C5589C600DB722B /* main.m in Sources */,
+				204293B31C56D0C60040240B /* _APPhoto.m in Sources */,
+				204293C51C56D0EF0040240B /* _APAnnotation.m in Sources */,
+				204293C01C56D0D40040240B /* APCover.m in Sources */,
+				204293C11C56D0D40040240B /* APPdfData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
