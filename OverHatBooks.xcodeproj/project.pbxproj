@@ -17,6 +17,7 @@
 		2016FA011C558A2B00DB722B /* OverHatBooks.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2016FA001C558A2B00DB722B /* OverHatBooks.xml */; };
 		2016FA031C558A5800DB722B /* OverHatBooks.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016FA021C558A5800DB722B /* OverHatBooks.png */; };
 		20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 20337E421C5679DB00266670 /* AGTCoreDataStack.m */; };
+		204293A71C56B45F0040240B /* OverHatBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 204293A51C56B45F0040240B /* OverHatBooks.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2016FA021C558A5800DB722B /* OverHatBooks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OverHatBooks.png; sourceTree = "<group>"; };
 		20337E421C5679DB00266670 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
 		20337E441C5679DF00266670 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		204293A61C56B45F0040240B /* OverHatBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OverHatBooks.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,7 @@
 		2016F9C91C5589C600DB722B /* OverHatBooks */ = {
 			isa = PBXGroup;
 			children = (
-				20337E411C56798200266670 /* Model */,
+				20337E411C56798200266670 /* Models */,
 				2016F9CD1C5589C600DB722B /* AppDelegate.h */,
 				2016F9CE1C5589C600DB722B /* AppDelegate.m */,
 				2016F9D61C5589C600DB722B /* Assets.xcassets */,
@@ -153,13 +155,14 @@
 			name = Docs;
 			sourceTree = "<group>";
 		};
-		20337E411C56798200266670 /* Model */ = {
+		20337E411C56798200266670 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				20337E441C5679DF00266670 /* AGTCoreDataStack.h */,
 				20337E421C5679DB00266670 /* AGTCoreDataStack.m */,
+				204293A51C56B45F0040240B /* OverHatBooks.xcdatamodeld */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204293A71C56B45F0040240B /* OverHatBooks.xcdatamodeld in Sources */,
 				2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */,
 				2016F9FE1C5589E400DB722B /* Readme.md in Sources */,
 				20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */,
@@ -533,6 +537,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		204293A51C56B45F0040240B /* OverHatBooks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				204293A61C56B45F0040240B /* OverHatBooks.xcdatamodel */,
+			);
+			currentVersion = 204293A61C56B45F0040240B /* OverHatBooks.xcdatamodel */;
+			path = OverHatBooks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2016F9BF1C5589C600DB722B /* Project object */;
 }
