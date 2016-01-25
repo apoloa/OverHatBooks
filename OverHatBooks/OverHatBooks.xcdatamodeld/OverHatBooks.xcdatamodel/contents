@@ -24,15 +24,15 @@
         <attribute name="pdfData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <relationship name="book" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="pdfData" inverseEntity="Book" syncable="YES"/>
     </entity>
-    <entity name="Photo" syncable="YES">
+    <entity name="Photo" representedClassName="APPhoto" syncable="YES">
         <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="annotations" toMany="YES" deletionRule="Nullify" destinationEntity="Annotation" inverseName="photo" inverseEntity="Annotation" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Book" positionX="-90" positionY="-279" width="128" height="133"/>
         <element name="Annotation" positionX="-101" positionY="9" width="128" height="133"/>
+        <element name="Book" positionX="-90" positionY="-279" width="128" height="133"/>
+        <element name="Cover" positionX="-270" positionY="-243" width="128" height="73"/>
         <element name="PdfData" positionX="-47" positionY="-396" width="128" height="73"/>
         <element name="Photo" positionX="171" positionY="-138" width="128" height="75"/>
-        <element name="Cover" positionX="-270" positionY="-243" width="128" height="73"/>
     </elements>
 </model>
