@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "APBook.h"
 #import "AGTCoreDataStack.h"
+#import "APBooksViewControllers.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +27,11 @@
                             urlImage:@"jajaj"
                               urlPDF:@"jojojo"
                              context:self.model.context];
+    NSLog(@"%@", b);
+    [self.model saveWithErrorBlock:^(NSError *error){
+        NSLog(@"La Cagamos");
+    }];
+    
 }
 
 
@@ -36,8 +42,29 @@
     // Meto datos chorras
     [self createDummyData];
     
+    // Creamos la window y tal y cual
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    
+    // NSFetchRequest
+    NSFetchRequest *r = [NSFetchRequest fetchRequestWithEntityName:APBook.entityName];
+    r.fetchBatchSize = 25;
+    r.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:APBookAttributes.name
+                                                        ascending:YES
+                                                         selector:@selector(caseInsensitiveCompare:)]];
+    
+    // NSFetchedResultsController
+    
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc]
+                                      initWithFetchRequest:r managedObjectContext:self.model.context
+                                      sectionNameKeyPath:nil
+                                      cacheName:nil];
+    
+    APBooksViewControllers *tVC = [[APBooksViewControllers alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
     
     
+    self.window.rootViewController = tVC;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
