@@ -1,4 +1,6 @@
 #import "APBook.h"
+#import "APCover.h"
+#import "APPdfData.h"
 
 @interface APBook ()
 
@@ -18,6 +20,8 @@
     b.name = name;
     b.urlImage = image;
     b.urlPDF = pdf;
+    b.coverImage = [APCover insertInManagedObjectContext:context];
+    b.pdfData = [APPdfData insertInManagedObjectContext:context];
     
     return b;
     
