@@ -17,6 +17,7 @@
 		200DB2611C59590F004B0EC8 /* APLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2601C59590F004B0EC8 /* APLibrary.m */; };
 		200DB2651C59865B004B0EC8 /* APAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2641C59865B004B0EC8 /* APAuthor.m */; };
 		200DB2681C59866A004B0EC8 /* _APAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2671C59866A004B0EC8 /* _APAuthor.m */; };
+		200DB26B1C5986EF004B0EC8 /* NSString+Tokenize.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB26A1C5986EF004B0EC8 /* NSString+Tokenize.m */; };
 		2016F9CC1C5589C600DB722B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CB1C5589C600DB722B /* main.m */; };
 		2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CE1C5589C600DB722B /* AppDelegate.m */; };
 		2016F9D71C5589C600DB722B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D61C5589C600DB722B /* Assets.xcassets */; };
@@ -74,6 +75,8 @@
 		200DB2641C59865B004B0EC8 /* APAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAuthor.m; sourceTree = "<group>"; };
 		200DB2661C59866A004B0EC8 /* _APAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APAuthor.h; sourceTree = "<group>"; };
 		200DB2671C59866A004B0EC8 /* _APAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APAuthor.m; sourceTree = "<group>"; };
+		200DB2691C5986EF004B0EC8 /* NSString+Tokenize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tokenize.h"; sourceTree = "<group>"; };
+		200DB26A1C5986EF004B0EC8 /* NSString+Tokenize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tokenize.m"; sourceTree = "<group>"; };
 		2016F9C71C5589C600DB722B /* OverHatBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverHatBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016F9CB1C5589C600DB722B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2016F9CD1C5589C600DB722B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 			children = (
 				200DB1FD1C580EC4004B0EC8 /* UIViewController+Navigation.h */,
 				200DB1FE1C580EC4004B0EC8 /* UIViewController+Navigation.m */,
+				200DB2691C5986EF004B0EC8 /* NSString+Tokenize.h */,
+				200DB26A1C5986EF004B0EC8 /* NSString+Tokenize.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -438,6 +443,7 @@
 				200DB1FF1C580EC4004B0EC8 /* UIViewController+Navigation.m in Sources */,
 				204293B01C56D0C60040240B /* _APBook.m in Sources */,
 				204293BF1C56D0D40040240B /* APBook.m in Sources */,
+				200DB26B1C5986EF004B0EC8 /* NSString+Tokenize.m in Sources */,
 				204293B21C56D0C60040240B /* _APPdfData.m in Sources */,
 				204293B11C56D0C60040240B /* _APCover.m in Sources */,
 				200DB25B1C58468B004B0EC8 /* APBooksTableViewController.m in Sources */,
