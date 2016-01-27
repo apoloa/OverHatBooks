@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "APBook.h"
 #import "AGTCoreDataStack.h"
-#import "APBooksViewControllers.h"
+#import "APBooksTableViewController.h"
+#import "UIViewController+Navigation.h"
 
 @interface AppDelegate ()
 
@@ -40,7 +41,7 @@
     self.model = [AGTCoreDataStack coreDataStackWithModelName:@"OverHatBooks"];
     
     // Meto datos chorras
-    [self createDummyData];
+    //[self createDummyData];
     
     // Creamos la window y tal y cual
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
@@ -59,10 +60,10 @@
                                       sectionNameKeyPath:nil
                                       cacheName:nil];
     
-    APBooksViewControllers *tVC = [[APBooksViewControllers alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
+    APBooksTableViewController *tVC = [[APBooksTableViewController alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
     
     
-    self.window.rootViewController = tVC;
+    self.window.rootViewController = [tVC wrappedInNavigation];
     
     [self.window makeKeyAndVisible];
     return YES;

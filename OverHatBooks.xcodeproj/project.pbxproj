@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200DB1FF1C580EC4004B0EC8 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB1FE1C580EC4004B0EC8 /* UIViewController+Navigation.m */; };
+		200DB2451C5823CA004B0EC8 /* APBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2431C5823CA004B0EC8 /* APBookTableViewCell.m */; };
+		200DB2461C5823CA004B0EC8 /* APBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200DB2441C5823CA004B0EC8 /* APBookTableViewCell.xib */; };
+		200DB24A1C583A6F004B0EC8 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 200DB2491C583A6F004B0EC8 /* cover.png */; };
+		200DB25B1C58468B004B0EC8 /* APBooksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2591C58468B004B0EC8 /* APBooksTableViewController.m */; };
+		200DB25C1C58468B004B0EC8 /* APBooksTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200DB25A1C58468B004B0EC8 /* APBooksTableViewController.xib */; };
+		200DB25E1C584711004B0EC8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 200DB25D1C584711004B0EC8 /* Default-568h@2x.png */; };
 		2016F9CC1C5589C600DB722B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CB1C5589C600DB722B /* main.m */; };
 		2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CE1C5589C600DB722B /* AppDelegate.m */; };
 		2016F9D71C5589C600DB722B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D61C5589C600DB722B /* Assets.xcassets */; };
-		2016F9DA1C5589C600DB722B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D81C5589C600DB722B /* LaunchScreen.storyboard */; };
 		2016F9E51C5589C700DB722B /* OverHatBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9E41C5589C700DB722B /* OverHatBooksTests.m */; };
 		2016F9F01C5589C700DB722B /* OverHatBooksUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9EF1C5589C700DB722B /* OverHatBooksUITests.m */; };
 		2016FA011C558A2B00DB722B /* OverHatBooks.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2016FA001C558A2B00DB722B /* OverHatBooks.xml */; };
@@ -27,6 +33,7 @@
 		204293C11C56D0D40040240B /* APPdfData.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293BB1C56D0D40040240B /* APPdfData.m */; };
 		204293C21C56D0D40040240B /* APPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293BD1C56D0D40040240B /* APPhoto.m */; };
 		204293C51C56D0EF0040240B /* _APAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293C41C56D0EF0040240B /* _APAnnotation.m */; };
+		204293CA1C58042E0040240B /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,12 +54,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200DB1FD1C580EC4004B0EC8 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		200DB1FE1C580EC4004B0EC8 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		200DB2421C5823CA004B0EC8 /* APBookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBookTableViewCell.h; sourceTree = "<group>"; };
+		200DB2431C5823CA004B0EC8 /* APBookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBookTableViewCell.m; sourceTree = "<group>"; };
+		200DB2441C5823CA004B0EC8 /* APBookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APBookTableViewCell.xib; sourceTree = "<group>"; };
+		200DB2491C583A6F004B0EC8 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		200DB2581C58468B004B0EC8 /* APBooksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBooksTableViewController.h; sourceTree = "<group>"; };
+		200DB2591C58468B004B0EC8 /* APBooksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBooksTableViewController.m; sourceTree = "<group>"; };
+		200DB25A1C58468B004B0EC8 /* APBooksTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APBooksTableViewController.xib; sourceTree = "<group>"; };
+		200DB25D1C584711004B0EC8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2016F9C71C5589C600DB722B /* OverHatBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverHatBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016F9CB1C5589C600DB722B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2016F9CD1C5589C600DB722B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2016F9CE1C5589C600DB722B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2016F9D61C5589C600DB722B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2016F9D91C5589C600DB722B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2016F9DB1C5589C600DB722B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2016F9E01C5589C700DB722B /* OverHatBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverHatBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016F9E41C5589C700DB722B /* OverHatBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverHatBooksTests.m; sourceTree = "<group>"; };
@@ -85,6 +101,8 @@
 		204293BD1C56D0D40040240B /* APPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPhoto.m; sourceTree = "<group>"; };
 		204293C31C56D0EF0040240B /* _APAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APAnnotation.h; sourceTree = "<group>"; };
 		204293C41C56D0EF0040240B /* _APAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APAnnotation.m; sourceTree = "<group>"; };
+		204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		204293CB1C5804370040240B /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +130,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200DB1FC1C580E60004B0EC8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				200DB1FD1C580EC4004B0EC8 /* UIViewController+Navigation.h */,
+				200DB1FE1C580EC4004B0EC8 /* UIViewController+Navigation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		200DB2001C581893004B0EC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				200DB2491C583A6F004B0EC8 /* cover.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2016F9BE1C5589C600DB722B = {
 			isa = PBXGroup;
 			children = (
+				200DB25D1C584711004B0EC8 /* Default-568h@2x.png */,
 				2016F9FF1C558A1D00DB722B /* Docs */,
 				2016F9C91C5589C600DB722B /* OverHatBooks */,
 				2016F9E31C5589C700DB722B /* OverHatBooksTests */,
@@ -136,11 +172,13 @@
 		2016F9C91C5589C600DB722B /* OverHatBooks */ = {
 			isa = PBXGroup;
 			children = (
+				200DB2001C581893004B0EC8 /* Resources */,
+				200DB1FC1C580E60004B0EC8 /* Categories */,
+				204293C81C5803290040240B /* Controllers */,
 				20337E411C56798200266670 /* Models */,
 				2016F9CD1C5589C600DB722B /* AppDelegate.h */,
 				2016F9CE1C5589C600DB722B /* AppDelegate.m */,
 				2016F9D61C5589C600DB722B /* Assets.xcassets */,
-				2016F9D81C5589C600DB722B /* LaunchScreen.storyboard */,
 				2016F9DB1C5589C600DB722B /* Info.plist */,
 				2016F9CA1C5589C600DB722B /* Supporting Files */,
 			);
@@ -226,6 +264,21 @@
 				204293BD1C56D0D40040240B /* APPhoto.m */,
 			);
 			name = Human;
+			sourceTree = "<group>";
+		};
+		204293C81C5803290040240B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				204293CB1C5804370040240B /* AGTCoreDataTableViewController.h */,
+				204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */,
+				200DB2421C5823CA004B0EC8 /* APBookTableViewCell.h */,
+				200DB2431C5823CA004B0EC8 /* APBookTableViewCell.m */,
+				200DB2441C5823CA004B0EC8 /* APBookTableViewCell.xib */,
+				200DB2581C58468B004B0EC8 /* APBooksTableViewController.h */,
+				200DB2591C58468B004B0EC8 /* APBooksTableViewController.m */,
+				200DB25A1C58468B004B0EC8 /* APBooksTableViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,9 +384,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2016F9DA1C5589C600DB722B /* LaunchScreen.storyboard in Resources */,
+				200DB2461C5823CA004B0EC8 /* APBookTableViewCell.xib in Resources */,
 				2016FA011C558A2B00DB722B /* OverHatBooks.xml in Resources */,
+				200DB25C1C58468B004B0EC8 /* APBooksTableViewController.xib in Resources */,
+				200DB24A1C583A6F004B0EC8 /* cover.png in Resources */,
 				2016FA031C558A5800DB722B /* OverHatBooks.png in Resources */,
+				200DB25E1C584711004B0EC8 /* Default-568h@2x.png in Resources */,
 				2016F9D71C5589C600DB722B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,14 +418,18 @@
 				204293A71C56B45F0040240B /* OverHatBooks.xcdatamodeld in Sources */,
 				204293C21C56D0D40040240B /* APPhoto.m in Sources */,
 				204293BE1C56D0D40040240B /* APAnnotation.m in Sources */,
+				200DB1FF1C580EC4004B0EC8 /* UIViewController+Navigation.m in Sources */,
 				204293B01C56D0C60040240B /* _APBook.m in Sources */,
 				204293BF1C56D0D40040240B /* APBook.m in Sources */,
 				204293B21C56D0C60040240B /* _APPdfData.m in Sources */,
 				204293B11C56D0C60040240B /* _APCover.m in Sources */,
+				200DB25B1C58468B004B0EC8 /* APBooksTableViewController.m in Sources */,
 				2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */,
 				20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */,
+				200DB2451C5823CA004B0EC8 /* APBookTableViewCell.m in Sources */,
 				2016F9CC1C5589C600DB722B /* main.m in Sources */,
 				204293B31C56D0C60040240B /* _APPhoto.m in Sources */,
+				204293CA1C58042E0040240B /* AGTCoreDataTableViewController.m in Sources */,
 				204293C51C56D0EF0040240B /* _APAnnotation.m in Sources */,
 				204293C01C56D0D40040240B /* APCover.m in Sources */,
 				204293C11C56D0D40040240B /* APPdfData.m in Sources */,
@@ -406,17 +466,6 @@
 			targetProxy = 2016F9EC1C5589C700DB722B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2016F9D81C5589C600DB722B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2016F9D91C5589C600DB722B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2016F9F21C5589C700DB722B /* Debug */ = {
@@ -503,10 +552,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OverHatBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adri.OverHatBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -514,10 +565,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OverHatBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adri.OverHatBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

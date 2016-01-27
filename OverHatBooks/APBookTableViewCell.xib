@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="14" rowHeight="122" id="KGk-i7-Jjw" customClass="APBookTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="qOR-tU-lEY">
+                        <rect key="frame" x="8" y="8" width="75" height="104"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="104" id="QLf-Kk-NLS"/>
+                            <constraint firstAttribute="width" constant="75" id="v6T-AT-6YK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9T-B1-k7F">
+                        <rect key="frame" x="91" y="24" width="257" height="22"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-xi-YsF">
+                        <rect key="frame" x="96" y="70" width="252" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dOd-Ee-XG8">
+                        <rect key="frame" x="96" y="110" width="252" height="2"/>
+                    </progressView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fvf-xi-YsF" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="9Lj-NR-MBT"/>
+                    <constraint firstItem="qOR-tU-lEY" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="C4z-Lh-96n"/>
+                    <constraint firstItem="qOR-tU-lEY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="HpM-9w-jKe"/>
+                    <constraint firstItem="dOd-Ee-XG8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="88" id="WIb-Hp-3ga"/>
+                    <constraint firstItem="i9T-B1-k7F" firstAttribute="leading" secondItem="qOR-tU-lEY" secondAttribute="trailing" constant="8" id="a6H-hC-DCY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dOd-Ee-XG8" secondAttribute="trailing" id="aEq-8x-zxO"/>
+                    <constraint firstItem="dOd-Ee-XG8" firstAttribute="top" secondItem="fvf-xi-YsF" secondAttribute="bottom" constant="23" id="d9m-uk-c94"/>
+                    <constraint firstItem="i9T-B1-k7F" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="iOJ-1I-Pje"/>
+                    <constraint firstItem="fvf-xi-YsF" firstAttribute="leading" secondItem="qOR-tU-lEY" secondAttribute="trailing" constant="13" id="o1I-a9-G7f"/>
+                    <constraint firstItem="dOd-Ee-XG8" firstAttribute="top" secondItem="fvf-xi-YsF" secondAttribute="bottom" constant="23" id="oeW-3D-asu"/>
+                    <constraint firstItem="i9T-B1-k7F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="pSs-DZ-nhD"/>
+                    <constraint firstItem="qOR-tU-lEY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="snb-OA-KjJ"/>
+                    <constraint firstItem="dOd-Ee-XG8" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="tpl-81-GDt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorBook" destination="fvf-xi-YsF" id="5Ei-EU-yev"/>
+                <outlet property="coverBook" destination="qOR-tU-lEY" id="8Dp-gz-ZAk"/>
+                <outlet property="nameBook" destination="i9T-B1-k7F" id="H9P-mG-XKt"/>
+                <outlet property="progressDownload" destination="dOd-Ee-XG8" id="cQr-Yy-MSC"/>
+            </connections>
+            <point key="canvasLocation" x="304" y="357.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cover.png" width="250" height="276"/>
+    </resources>
+</document>
