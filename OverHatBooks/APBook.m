@@ -27,4 +27,16 @@
     
 }
 
++(instancetype) bookWithJSONDictionary:(NSDictionary *) dict
+                               context:(NSManagedObjectContext *) context{
+    APBook *b = [self insertInManagedObjectContext:context];
+    b.name = dict[@"title"];
+    b.urlImage = dict[@"image_url"];
+    b.urlPDF = dict[@"pdf_url"];
+    b.coverImage = [APCover insertInManagedObjectContext:context];
+    b.pdfData = [APPdfData insertInManagedObjectContext:context];
+    
+    return b;
+}
+
 @end

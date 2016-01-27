@@ -11,6 +11,7 @@ const struct APBookAttributes APBookAttributes = {
 
 const struct APBookRelationships APBookRelationships = {
 	.annotation = @"annotation",
+	.authors = @"authors",
 	.coverImage = @"coverImage",
 	.pdfData = @"pdfData",
 };
@@ -58,6 +59,17 @@ const struct APBookRelationships APBookRelationships = {
 	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"annotation"];
 
 	[self didAccessValueForKey:@"annotation"];
+	return result;
+}
+
+@dynamic authors;
+
+- (NSMutableSet*)authorsSet {
+	[self willAccessValueForKey:@"authors"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"authors"];
+
+	[self didAccessValueForKey:@"authors"];
 	return result;
 }
 

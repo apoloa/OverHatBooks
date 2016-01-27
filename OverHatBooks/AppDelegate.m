@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "APLibrary.h"
+#import "Settings.h"
 #import "APBook.h"
 #import "AGTCoreDataStack.h"
 #import "APBooksTableViewController.h"
@@ -14,37 +16,32 @@
 
 @interface AppDelegate ()
 
-@property (strong, nonatomic) AGTCoreDataStack* model;
-
 @end
 
 @implementation AppDelegate
 
-
--(void) createDummyData{
-    // Creo un libro
-    
-    APBook *b = [APBook bookWithName:@"Kamasutra"
-                            urlImage:@"jajaj"
-                              urlPDF:@"jojojo"
-                             context:self.model.context];
-    NSLog(@"%@", b);
-    [self.model saveWithErrorBlock:^(NSError *error){
-        NSLog(@"La Cagamos");
-    }];
-    
-}
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.model = [AGTCoreDataStack coreDataStackWithModelName:@"OverHatBooks"];
-    
-    // Meto datos chorras
-    //[self createDummyData];
+    APLibrary *model = [[APLibrary alloc] initWithDatabaseName:MODEL_NAME];
     
     // Creamos la window y tal y cual
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    [def setBool:NO forKey:IS_LIBRARY_LOADED];
+    
+    if (![def objectForKey:IS_LIBRARY_LOADED]) {
+        NSURL *url = [NSURL URLWithString:URL_BOOKS];
+        [model downloadCollectionFromUrl:url];
+        [def setBool:YES forKey:IS_LIBRARY_LOADED];
+    }else{
+        bool libraryLoaded = [def boolForKey:IS_LIBRARY_LOADED];
+        if (!libraryLoaded){
+            NSURL *url = [NSURL URLWithString:URL_BOOKS];
+            [model downloadCollectionFromUrl:url];
+            [def setBool:YES forKey:IS_LIBRARY_LOADED];
+        }
+    }
     
     // NSFetchRequest
     NSFetchRequest *r = [NSFetchRequest fetchRequestWithEntityName:APBook.entityName];
@@ -56,7 +53,7 @@
     // NSFetchedResultsController
     
     NSFetchedResultsController *fc = [[NSFetchedResultsController alloc]
-                                      initWithFetchRequest:r managedObjectContext:self.model.context
+                                      initWithFetchRequest:r managedObjectContext:model.model.context
                                       sectionNameKeyPath:nil
                                       cacheName:nil];
     

@@ -11,11 +11,13 @@ extern const struct APBookAttributes {
 
 extern const struct APBookRelationships {
 	__unsafe_unretained NSString *annotation;
+	__unsafe_unretained NSString *authors;
 	__unsafe_unretained NSString *coverImage;
 	__unsafe_unretained NSString *pdfData;
 } APBookRelationships;
 
 @class APAnnotation;
+@class APAuthor;
 @class APCover;
 @class APPdfData;
 
@@ -44,6 +46,10 @@ extern const struct APBookRelationships {
 
 - (NSMutableSet*)annotationSet;
 
+@property (nonatomic, strong) NSSet *authors;
+
+- (NSMutableSet*)authorsSet;
+
 @property (nonatomic, strong) APCover *coverImage;
 
 //- (BOOL)validateCoverImage:(id*)value_ error:(NSError**)error_;
@@ -62,6 +68,14 @@ extern const struct APBookRelationships {
 
 @end
 
+@interface _APBook (AuthorsCoreDataGeneratedAccessors)
+- (void)addAuthors:(NSSet*)value_;
+- (void)removeAuthors:(NSSet*)value_;
+- (void)addAuthorsObject:(APAuthor*)value_;
+- (void)removeAuthorsObject:(APAuthor*)value_;
+
+@end
+
 @interface _APBook (CoreDataGeneratedPrimitiveAccessors)
 
 - (NSString*)primitiveName;
@@ -75,6 +89,9 @@ extern const struct APBookRelationships {
 
 - (NSMutableSet*)primitiveAnnotation;
 - (void)setPrimitiveAnnotation:(NSMutableSet*)value;
+
+- (NSMutableSet*)primitiveAuthors;
+- (void)setPrimitiveAuthors:(NSMutableSet*)value;
 
 - (APCover*)primitiveCoverImage;
 - (void)setPrimitiveCoverImage:(APCover*)value;

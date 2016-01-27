@@ -3,9 +3,12 @@
 @interface APBook : _APBook {}
 // Custom logic goes here.
 
-+(instancetype) bookWithName:(NSString*) name
++(instancetype) bookWithName:(NSString *) name
                     urlImage:(NSString *) image
                       urlPDF:(NSString *) pdf
-                     context:(NSManagedObjectContext*) context;
+                     context:(NSManagedObjectContext *) context;
+
++(instancetype) bookWithJSONDictionary:(NSDictionary *) dict
+                               context:(NSManagedObjectContext *) context;
 
 @end

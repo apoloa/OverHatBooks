@@ -8,11 +8,16 @@
         <relationship name="book" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="annotation" inverseEntity="Book" syncable="YES"/>
         <relationship name="photo" maxCount="1" deletionRule="Cascade" destinationEntity="Photo" inverseName="annotations" inverseEntity="Photo" syncable="YES"/>
     </entity>
+    <entity name="Author" representedClassName="APAuthor" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="authors" inverseEntity="Book" syncable="YES"/>
+    </entity>
     <entity name="Book" representedClassName="APBook" syncable="YES">
         <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="urlImage" attributeType="String" syncable="YES"/>
         <attribute name="urlPDF" attributeType="String" syncable="YES"/>
         <relationship name="annotation" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Annotation" inverseName="book" inverseEntity="Annotation" syncable="YES"/>
+        <relationship name="authors" toMany="YES" deletionRule="Nullify" destinationEntity="Author" inverseName="books" inverseEntity="Author" syncable="YES"/>
         <relationship name="coverImage" maxCount="1" deletionRule="Cascade" destinationEntity="Cover" inverseName="book" inverseEntity="Cover" syncable="YES"/>
         <relationship name="pdfData" maxCount="1" deletionRule="Cascade" destinationEntity="PdfData" inverseName="book" inverseEntity="PdfData" syncable="YES"/>
     </entity>
@@ -30,9 +35,10 @@
     </entity>
     <elements>
         <element name="Annotation" positionX="-101" positionY="9" width="128" height="133"/>
-        <element name="Book" positionX="-90" positionY="-279" width="128" height="133"/>
+        <element name="Book" positionX="-90" positionY="-279" width="128" height="148"/>
         <element name="Cover" positionX="-270" positionY="-243" width="128" height="73"/>
         <element name="PdfData" positionX="-47" positionY="-396" width="128" height="73"/>
         <element name="Photo" positionX="171" positionY="-138" width="128" height="75"/>
+        <element name="Author" positionX="81" positionY="-295" width="128" height="73"/>
     </elements>
 </model>
