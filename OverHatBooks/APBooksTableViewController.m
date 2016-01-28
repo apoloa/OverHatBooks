@@ -27,6 +27,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self updateRightButton];
+}
+
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *cellID = @"APBookCellId";
@@ -50,6 +55,25 @@
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 122;
+}
+
+- (void)updateRightButton
+{
+    //Add right button to navigator to change Book Order
+    if (!self.navigationItem.rightBarButtonItem){
+        UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(changeBooksOrder:)];
+        self.navigationItem.rightBarButtonItem = button;
+    }
+     [self.navigationItem.rightBarButtonItem setTitle:@"Tags"];
+    
+}
+
+- (void)changeBooksOrder:(id)sender
+{
+  
 }
 
 

@@ -18,47 +18,46 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="qOR-tU-lEY">
                         <rect key="frame" x="8" y="8" width="75" height="104"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="104" id="QLf-Kk-NLS"/>
-                            <constraint firstAttribute="width" constant="75" id="v6T-AT-6YK"/>
+                            <constraint firstAttribute="width" constant="75" id="7r4-fL-PqS"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9T-B1-k7F">
-                        <rect key="frame" x="91" y="24" width="257" height="22"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-xi-YsF">
-                        <rect key="frame" x="96" y="70" width="252" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-xi-YsF">
+                        <rect key="frame" x="96" y="64" width="252" height="38"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dOd-Ee-XG8">
-                        <rect key="frame" x="96" y="110" width="252" height="2"/>
-                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9T-B1-k7F">
+                        <rect key="frame" x="91" y="8" width="251" height="54"/>
+                        <attributedString key="attributedText">
+                            <fragment content="ffasfaasfkjasljflñkasjflñajskfñasjfasñlkjfñalsjfalsjflaskjfñasfklasfdklas">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="fvf-xi-YsF" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="9Lj-NR-MBT"/>
-                    <constraint firstItem="qOR-tU-lEY" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="C4z-Lh-96n"/>
-                    <constraint firstItem="qOR-tU-lEY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="HpM-9w-jKe"/>
-                    <constraint firstItem="dOd-Ee-XG8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="88" id="WIb-Hp-3ga"/>
-                    <constraint firstItem="i9T-B1-k7F" firstAttribute="leading" secondItem="qOR-tU-lEY" secondAttribute="trailing" constant="8" id="a6H-hC-DCY"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="dOd-Ee-XG8" secondAttribute="trailing" id="aEq-8x-zxO"/>
-                    <constraint firstItem="dOd-Ee-XG8" firstAttribute="top" secondItem="fvf-xi-YsF" secondAttribute="bottom" constant="23" id="d9m-uk-c94"/>
-                    <constraint firstItem="i9T-B1-k7F" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="iOJ-1I-Pje"/>
-                    <constraint firstItem="fvf-xi-YsF" firstAttribute="leading" secondItem="qOR-tU-lEY" secondAttribute="trailing" constant="13" id="o1I-a9-G7f"/>
-                    <constraint firstItem="dOd-Ee-XG8" firstAttribute="top" secondItem="fvf-xi-YsF" secondAttribute="bottom" constant="23" id="oeW-3D-asu"/>
-                    <constraint firstItem="i9T-B1-k7F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="pSs-DZ-nhD"/>
-                    <constraint firstItem="qOR-tU-lEY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="snb-OA-KjJ"/>
-                    <constraint firstItem="dOd-Ee-XG8" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="tpl-81-GDt"/>
+                    <constraint firstItem="i9T-B1-k7F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="5J7-KN-4QP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="i9T-B1-k7F" secondAttribute="trailing" constant="6" id="6p0-MY-bdl"/>
+                    <constraint firstItem="qOR-tU-lEY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="CrL-g8-du6"/>
+                    <constraint firstItem="qOR-tU-lEY" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="J3N-RT-axg"/>
+                    <constraint firstItem="fvf-xi-YsF" firstAttribute="top" secondItem="i9T-B1-k7F" secondAttribute="bottom" constant="2" id="NZF-Cw-W9u"/>
+                    <constraint firstItem="qOR-tU-lEY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="QIY-BA-zfo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fvf-xi-YsF" secondAttribute="bottom" constant="10" id="TwU-vL-NEH"/>
+                    <constraint firstItem="fvf-xi-YsF" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="XUP-dk-CRp"/>
+                    <constraint firstItem="fvf-xi-YsF" firstAttribute="leading" secondItem="qOR-tU-lEY" secondAttribute="trailing" constant="13" id="tlu-ty-ce8"/>
+                    <constraint firstItem="i9T-B1-k7F" firstAttribute="leading" secondItem="qOR-tU-lEY" secondAttribute="trailing" constant="8" id="wJZ-Dc-2Ro"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="authorBook" destination="fvf-xi-YsF" id="5Ei-EU-yev"/>
                 <outlet property="coverBook" destination="qOR-tU-lEY" id="8Dp-gz-ZAk"/>
                 <outlet property="nameBook" destination="i9T-B1-k7F" id="H9P-mG-XKt"/>
-                <outlet property="progressDownload" destination="dOd-Ee-XG8" id="cQr-Yy-MSC"/>
             </connections>
             <point key="canvasLocation" x="304" y="357.5"/>
         </tableViewCell>

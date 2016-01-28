@@ -35,6 +35,7 @@
         // No habia nada y hay que crear
         obj = [NSEntityDescription insertNewObjectForEntityForName:[self entityName]
                                             inManagedObjectContext:context];
+        [obj setValue:value forKey:key];
     }
     
     return obj;

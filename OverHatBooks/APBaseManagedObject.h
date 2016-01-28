@@ -10,6 +10,10 @@
 
 @interface APBaseManagedObject : NSManagedObject
 
-+ (NSString*)entityName;
++(NSString*)entityName;
+
++(id)uniqueObjectWithValue:(id)value
+                    forKey:(NSString *)key
+    inManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end

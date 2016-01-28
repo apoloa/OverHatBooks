@@ -8,6 +8,7 @@
 
 #import "APLibrary.h"
 #import "APBook.h"
+#import "APCover.h"
 #import "Settings.h"
 
 @implementation APLibrary
@@ -27,7 +28,6 @@
     for(NSDictionary *dict in jsonDicts){
         [APBook bookWithJSONDictionary:dict
                                context:self.model.context];
-        
     }
     
     [self.model saveWithErrorBlock:^(NSError *error){
@@ -36,6 +36,8 @@
         NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
         [def setBool:NO forKey:IS_LIBRARY_LOADED];
     }];
+    
+    
 }
 
 -(void) downloadCollectionFromUrl:(NSURL *)url{
@@ -65,8 +67,20 @@ didFinishDownloadingToURL:(NSURL *)location{
         [jsonObject isKindOfClass:[NSArray class]]){
         NSArray *books = (NSArray*)jsonObject;
         
+        NSMutableArray *booksWithData = [NSMutableArray new];
+        
+        for(NSDictionary *dict in books){
+            NSURL *url = [NSURL URLWithString:dict[@"image_url"]];
+            NSMutableDictionary *dictWithData = [NSMutableDictionary dictionaryWithDictionary:dict];
+            if (url != nil){
+                NSData *dataImage = [NSData dataWithContentsOfURL:url];
+                [dictWithData setObject:dataImage forKey:@"data_image"];
+            }
+            [booksWithData addObject:dictWithData];
+        }
+        
         dispatch_async(dispatch_get_main_queue(), ^(void){
-            [self importFromJSONData:books];
+            [self importFromJSONData:[booksWithData copy]];
         });
     }
     [session finishTasksAndInvalidate];

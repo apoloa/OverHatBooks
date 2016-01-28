@@ -24,6 +24,7 @@
     
     APLibrary *model = [[APLibrary alloc] initWithDatabaseName:MODEL_NAME];
     
+    [model.model zapAllData];
     // Creamos la window y tal y cual
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
     
