@@ -2,6 +2,7 @@
 // Make changes to APPhoto.h instead.
 
 @import CoreData;
+#import "APBaseManagedObject.h"
 
 extern const struct APPhotoAttributes {
 	__unsafe_unretained NSString *imageData;
@@ -16,7 +17,7 @@ extern const struct APPhotoRelationships {
 @interface APPhotoID : NSManagedObjectID {}
 @end
 
-@interface _APPhoto : NSManagedObject {}
+@interface _APPhoto : APBaseManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

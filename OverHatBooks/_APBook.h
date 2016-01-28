@@ -2,6 +2,7 @@
 // Make changes to APBook.h instead.
 
 @import CoreData;
+#import "APBaseManagedObject.h"
 
 extern const struct APBookAttributes {
 	__unsafe_unretained NSString *name;
@@ -24,7 +25,7 @@ extern const struct APBookRelationships {
 @interface APBookID : NSManagedObjectID {}
 @end
 
-@interface _APBook : NSManagedObject {}
+@interface _APBook : APBaseManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

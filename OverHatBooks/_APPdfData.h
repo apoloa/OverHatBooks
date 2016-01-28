@@ -2,6 +2,7 @@
 // Make changes to APPdfData.h instead.
 
 @import CoreData;
+#import "APBaseManagedObject.h"
 
 extern const struct APPdfDataAttributes {
 	__unsafe_unretained NSString *pdfData;
@@ -16,7 +17,7 @@ extern const struct APPdfDataRelationships {
 @interface APPdfDataID : NSManagedObjectID {}
 @end
 
-@interface _APPdfData : NSManagedObject {}
+@interface _APPdfData : APBaseManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

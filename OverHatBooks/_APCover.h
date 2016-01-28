@@ -2,6 +2,7 @@
 // Make changes to APCover.h instead.
 
 @import CoreData;
+#import "APBaseManagedObject.h"
 
 extern const struct APCoverAttributes {
 	__unsafe_unretained NSString *imageData;
@@ -16,7 +17,7 @@ extern const struct APCoverRelationships {
 @interface APCoverID : NSManagedObjectID {}
 @end
 
-@interface _APCover : NSManagedObject {}
+@interface _APCover : APBaseManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

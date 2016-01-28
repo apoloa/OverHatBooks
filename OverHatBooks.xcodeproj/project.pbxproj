@@ -18,6 +18,7 @@
 		200DB2651C59865B004B0EC8 /* APAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2641C59865B004B0EC8 /* APAuthor.m */; };
 		200DB2681C59866A004B0EC8 /* _APAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2671C59866A004B0EC8 /* _APAuthor.m */; };
 		200DB26B1C5986EF004B0EC8 /* NSString+Tokenize.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB26A1C5986EF004B0EC8 /* NSString+Tokenize.m */; };
+		200DB26E1C598CB2004B0EC8 /* APBaseManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB26D1C598CB2004B0EC8 /* APBaseManagedObject.m */; };
 		2016F9CC1C5589C600DB722B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CB1C5589C600DB722B /* main.m */; };
 		2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CE1C5589C600DB722B /* AppDelegate.m */; };
 		2016F9D71C5589C600DB722B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2016F9D61C5589C600DB722B /* Assets.xcassets */; };
@@ -77,6 +78,8 @@
 		200DB2671C59866A004B0EC8 /* _APAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APAuthor.m; sourceTree = "<group>"; };
 		200DB2691C5986EF004B0EC8 /* NSString+Tokenize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tokenize.h"; sourceTree = "<group>"; };
 		200DB26A1C5986EF004B0EC8 /* NSString+Tokenize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tokenize.m"; sourceTree = "<group>"; };
+		200DB26C1C598CB2004B0EC8 /* APBaseManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBaseManagedObject.h; sourceTree = "<group>"; };
+		200DB26D1C598CB2004B0EC8 /* APBaseManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBaseManagedObject.m; sourceTree = "<group>"; };
 		2016F9C71C5589C600DB722B /* OverHatBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverHatBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016F9CB1C5589C600DB722B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2016F9CD1C5589C600DB722B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				204293A51C56B45F0040240B /* OverHatBooks.xcdatamodeld */,
 				200DB25F1C59590F004B0EC8 /* APLibrary.h */,
 				200DB2601C59590F004B0EC8 /* APLibrary.m */,
+				200DB26C1C598CB2004B0EC8 /* APBaseManagedObject.h */,
+				200DB26D1C598CB2004B0EC8 /* APBaseManagedObject.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 				200DB2681C59866A004B0EC8 /* _APAuthor.m in Sources */,
 				200DB2651C59865B004B0EC8 /* APAuthor.m in Sources */,
 				2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */,
+				200DB26E1C598CB2004B0EC8 /* APBaseManagedObject.m in Sources */,
 				20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */,
 				200DB2611C59590F004B0EC8 /* APLibrary.m in Sources */,
 				200DB2451C5823CA004B0EC8 /* APBookTableViewCell.m in Sources */,

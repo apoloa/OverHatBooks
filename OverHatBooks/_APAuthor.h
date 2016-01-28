@@ -2,6 +2,7 @@
 // Make changes to APAuthor.h instead.
 
 @import CoreData;
+#import "APBaseManagedObject.h"
 
 extern const struct APAuthorAttributes {
 	__unsafe_unretained NSString *name;
@@ -16,7 +17,7 @@ extern const struct APAuthorRelationships {
 @interface APAuthorID : NSManagedObjectID {}
 @end
 
-@interface _APAuthor : NSManagedObject {}
+@interface _APAuthor : APBaseManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

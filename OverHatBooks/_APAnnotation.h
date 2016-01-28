@@ -2,6 +2,7 @@
 // Make changes to APAnnotation.h instead.
 
 @import CoreData;
+#import "APBaseManagedObject.h"
 
 extern const struct APAnnotationAttributes {
 	__unsafe_unretained NSString *creationDate;
@@ -21,7 +22,7 @@ extern const struct APAnnotationRelationships {
 @interface APAnnotationID : NSManagedObjectID {}
 @end
 
-@interface _APAnnotation : NSManagedObject {}
+@interface _APAnnotation : APBaseManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
