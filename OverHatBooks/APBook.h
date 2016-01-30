@@ -10,5 +10,7 @@
 
 +(instancetype) bookWithJSONDictionary:(NSDictionary *) dict
                                context:(NSManagedObjectContext *) context;
+-(NSString *) authorsJoinedByString:(NSString*)separator;
+-(NSString *) tagsJoinedByString:(NSString*)separator;
 
 @end

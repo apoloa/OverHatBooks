@@ -53,4 +53,24 @@
     return b;
 }
 
+
+-(NSString *) authorsJoinedByString:(NSString*)separator{
+    NSArray *authors = [self.authors allObjects];
+    NSMutableArray *authorsName = [NSMutableArray new];
+    for(APAuthor *author in authors){
+        [authorsName addObject:author.name];
+    }
+    return [authorsName componentsJoinedByString:separator];
+}
+-(NSString *) tagsJoinedByString:(NSString*)separator{
+    NSArray *tags = [self.bookTags allObjects];
+    NSMutableArray *tagsName = [NSMutableArray new];
+    for(APBookTag *bookTag in tags){
+        [tagsName addObject:bookTag.tag.name];
+    }
+    return [tagsName componentsJoinedByString:separator];
+}
+
+
+
 @end

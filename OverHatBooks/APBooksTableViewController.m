@@ -12,6 +12,7 @@
 #import "APBookTag.h"
 #import "APLibrary.h"
 #import "Settings.h"
+#import "APBookDetailViewController.h"
 
 
 
@@ -59,6 +60,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.barTintColor = nil;
     [self updateRightButton];
     [self updateLeftSpinner];
 }
@@ -66,8 +68,7 @@
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *cellID = @"APBookCellId";
-    
-    
+
     APBookTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if(cell == nil){
         // Creamos la celda de la nada
@@ -85,6 +86,14 @@
     return cell;
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    APBook *book = [self bookAtIndexPath:indexPath];
+    APBookDetailViewController *bookDetailVC = [[APBookDetailViewController alloc] initWithBook:book];
+    
+    [self.navigationController pushViewController:bookDetailVC animated:YES];
+}
+
+
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 122;
 }
@@ -92,12 +101,12 @@
 
 #pragma mark - Utils
 
-- (APBookTag *)tagAtIndex:(NSIndexPath *)indexPath {
+-(APBookTag *)tagAtIndex:(NSIndexPath *)indexPath {
     APBookTag *tag = [self.fetchedResultsController objectAtIndexPath:indexPath];
     return tag;
 }
 
-- (APBook *)bookAtIndexPath:(NSIndexPath *)indexPath {
+-(APBook *)bookAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString *entityName = self.fetchedResultsController.fetchRequest.entityName;
     APBook *book;
@@ -110,7 +119,9 @@
     return book;
 }
 
-- (void)updateLeftSpinner{
+
+
+-(void)updateLeftSpinner{
     if(!self.navigationItem.leftBarButtonItem && self.libraryLoaded==NO){
         UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
         UIBarButtonItem *button = [[UIBarButtonItem alloc]initWithCustomView:indicator];
@@ -119,7 +130,7 @@
     }
 }
 
-- (void)updateRightButton{
+-(void)updateRightButton{
     //Add right button to navigator to change Book Order
     if (!self.navigationItem.rightBarButtonItem){
         UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@""
@@ -132,15 +143,13 @@
     
 }
 
-
 -(void)disableActivityIndicator{
     if(self.navigationItem.leftBarButtonItem){
         self.navigationItem.leftBarButtonItem = nil;
     }
 }
 
-- (void)changeBooksOrder:(id)sender
-{
+-(void)changeBooksOrder:(id)sender{
     NSFetchedResultsController *fc = nil;
     if (self.currentOrder == TAGS) {
         NSFetchRequest *r = [NSFetchRequest fetchRequestWithEntityName:APBook.entityName];

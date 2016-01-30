@@ -25,15 +25,8 @@
         UIImage *img = [UIImage imageWithData:book.coverImage.imageData];
         self.coverBook.image = img;
     }
-    NSArray *authors = [book.authors allObjects];
-    NSMutableArray *authorsName = [NSMutableArray new];
-    for(APAuthor *author in authors){
-        [authorsName addObject:author.name];
-    }
-    NSString *authorsString = [authorsName componentsJoinedByString:@", "];
     
-    
-    self.authorBook.text = authorsString;
+    self.authorBook.text = [book authorsJoinedByString:@", "];
     self.nameBook.text = book.name;
 }
 

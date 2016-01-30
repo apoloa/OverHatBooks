@@ -46,6 +46,8 @@
 		204293C21C56D0D40040240B /* APPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293BD1C56D0D40040240B /* APPhoto.m */; };
 		204293C51C56D0EF0040240B /* _APAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293C41C56D0EF0040240B /* _APAnnotation.m */; };
 		204293CA1C58042E0040240B /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */; };
+		205AFFA71C5D17370063CC1F /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFA61C5D17370063CC1F /* UIImage+Color.m */; };
+		205AFFAA1C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,10 @@
 		204293C41C56D0EF0040240B /* _APAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APAnnotation.m; sourceTree = "<group>"; };
 		204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		204293CB1C5804370040240B /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		205AFFA51C5D17370063CC1F /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		205AFFA61C5D17370063CC1F /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataCollectionViewController.m; path = ../../../../../Desktop/AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
+		205AFFA91C5D1C760063CC1F /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataCollectionViewController.h; path = ../../../../../Desktop/AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,8 @@
 				200DB1FE1C580EC4004B0EC8 /* UIViewController+Navigation.m */,
 				200DB2691C5986EF004B0EC8 /* NSString+Tokenize.h */,
 				200DB26A1C5986EF004B0EC8 /* NSString+Tokenize.m */,
+				205AFFA51C5D17370063CC1F /* UIImage+Color.h */,
+				205AFFA61C5D17370063CC1F /* UIImage+Color.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -324,6 +332,8 @@
 		204293C81C5803290040240B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */,
+				205AFFA91C5D1C760063CC1F /* AGTCoreDataCollectionViewController.h */,
 				204293CB1C5804370040240B /* AGTCoreDataTableViewController.h */,
 				204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */,
 				200DB2421C5823CA004B0EC8 /* APBookTableViewCell.h */,
@@ -495,10 +505,12 @@
 				20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */,
 				200DB2611C59590F004B0EC8 /* APLibrary.m in Sources */,
 				200DB2451C5823CA004B0EC8 /* APBookTableViewCell.m in Sources */,
+				205AFFAA1C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m in Sources */,
 				2016F9CC1C5589C600DB722B /* main.m in Sources */,
 				204293B31C56D0C60040240B /* _APPhoto.m in Sources */,
 				204293CA1C58042E0040240B /* AGTCoreDataTableViewController.m in Sources */,
 				204293C51C56D0EF0040240B /* _APAnnotation.m in Sources */,
+				205AFFA71C5D17370063CC1F /* UIImage+Color.m in Sources */,
 				204293C01C56D0D40040240B /* APCover.m in Sources */,
 				200DB28B1C5CE733004B0EC8 /* APBookDetailViewController.m in Sources */,
 				200DB2841C5AE1D7004B0EC8 /* APBookTag.m in Sources */,
