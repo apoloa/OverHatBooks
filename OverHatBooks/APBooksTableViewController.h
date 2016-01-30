@@ -9,7 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "AGTCoreDataTableViewController.h"
 
+#define TAGS 0
+#define ALPHABETICAL 1
+
+@class APLibrary;
 
 @interface APBooksTableViewController : AGTCoreDataTableViewController
+
+-(id) initWithFetchedResultsController:(NSFetchedResultsController *)aFetchedResultsController
+                               library:(APLibrary *)aLibrary
+                                 style:(UITableViewStyle)aStyle;
 
 @end

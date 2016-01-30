@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "APLibrary.h"
 #import "Settings.h"
-#import "APBook.h"
+#import "APBookTag.h"
+#import "APTag.h"
 #import "AGTCoreDataStack.h"
 #import "APBooksTableViewController.h"
 #import "UIViewController+Navigation.h"
@@ -22,44 +23,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    APLibrary *model = [[APLibrary alloc] initWithDatabaseName:MODEL_NAME];
-    
-    [model.model zapAllData];
-    // Creamos la window y tal y cual
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
-    
+    /*
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     [def setBool:NO forKey:IS_LIBRARY_LOADED];
     
-    if (![def objectForKey:IS_LIBRARY_LOADED]) {
-        NSURL *url = [NSURL URLWithString:URL_BOOKS];
-        [model downloadCollectionFromUrl:url];
-        [def setBool:YES forKey:IS_LIBRARY_LOADED];
-    }else{
-        bool libraryLoaded = [def boolForKey:IS_LIBRARY_LOADED];
-        if (!libraryLoaded){
-            NSURL *url = [NSURL URLWithString:URL_BOOKS];
-            [model downloadCollectionFromUrl:url];
-            [def setBool:YES forKey:IS_LIBRARY_LOADED];
-        }
-    }
+    */
     
-    // NSFetchRequest
-    NSFetchRequest *r = [NSFetchRequest fetchRequestWithEntityName:APBook.entityName];
-    r.fetchBatchSize = 25;
-    r.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:APBookAttributes.name
-                                                        ascending:YES
-                                                         selector:@selector(caseInsensitiveCompare:)]];
+    APLibrary *model = [[APLibrary alloc] initWithDatabaseName:MODEL_NAME];
+     
     
-    // NSFetchedResultsController
+    //[model.model zapAllData];
     
+    NSFetchRequest *r = [NSFetchRequest fetchRequestWithEntityName:APBookTag.entityName];
+    r.fetchBatchSize = 20;
+    
+    NSSortDescriptor *tagName = [NSSortDescriptor sortDescriptorWithKey:@"tag.name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    
+    NSSortDescriptor *bookName = [NSSortDescriptor sortDescriptorWithKey:@"book.name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    
+    r.sortDescriptors = @[tagName, bookName];
     NSFetchedResultsController *fc = [[NSFetchedResultsController alloc]
                                       initWithFetchRequest:r managedObjectContext:model.model.context
-                                      sectionNameKeyPath:nil
+                                      sectionNameKeyPath:@"tag.name"
                                       cacheName:nil];
     
-    APBooksTableViewController *tVC = [[APBooksTableViewController alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
     
+    APBooksTableViewController *tVC = [[APBooksTableViewController alloc]initWithFetchedResultsController:fc
+                                                                                                  library:model
+                                                                                                    style:UITableViewStyleGrouped];
+    self.window = [[UIWindow alloc] initWithFrame:
+                   [[UIScreen mainScreen] bounds]];
     
     self.window.rootViewController = [tVC wrappedInNavigation];
     

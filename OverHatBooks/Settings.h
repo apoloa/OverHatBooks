@@ -13,3 +13,5 @@
 #define MODEL_NAME @"OverHatBooks"
 
 #define URL_BOOKS @"https://t.co/K9ziV0z3SJ"
+
+#define FAVORITE_TAG @"Favorite"

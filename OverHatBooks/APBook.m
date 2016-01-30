@@ -2,6 +2,8 @@
 #import "APCover.h"
 #import "APPdfData.h"
 #import "APAuthor.h"
+#import "APBookTag.h"
+#import "APTag.h"
 #import "NSString+Tokenize.h"
 
 @interface APBook ()
@@ -36,11 +38,14 @@
     b.urlImage = dict[@"image_url"];
     b.urlPDF = dict[@"pdf_url"];
     NSArray *arAuthors = [dict[@"authors"] tokenizeByCommas];
-    NSMutableArray *arAPAuthors = [NSMutableArray new];
     for(NSString *authorName in arAuthors){
-        [arAPAuthors addObject:[APAuthor authorWithName:authorName context:context]];
+        [b addAuthorsObject:[APAuthor authorWithName:authorName context:context]];
     }
-    b.authors = [NSSet setWithArray:arAPAuthors];
+    NSArray *arTags = [dict[@"tags"] tokenizeByCommas];
+    for(NSString *tagName in arTags){
+        [b addBookTagsObject:[APBookTag bookTagWithName:tagName Book:b context:context]];
+    }
+
     b.coverImage = [APCover insertInManagedObjectContext:context];
     b.coverImage.imageData = dict[@"data_image"];
     b.pdfData = [APPdfData insertInManagedObjectContext:context];

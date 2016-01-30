@@ -13,6 +13,8 @@
 
 @property (strong, nonatomic) AGTCoreDataStack* model;
 
+-(void) openWithCompletionHandler:(void (^)(NSError *))completionBlock;
+
 -(id) initWithDatabaseName:(NSString *) name;
 
 -(void) downloadCollectionFromUrl:(NSURL *)url;
