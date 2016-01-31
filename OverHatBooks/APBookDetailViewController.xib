@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="authorBook" destination="sxZ-E0-lw0" id="yOh-cB-wjK"/>
                 <outlet property="button" destination="G2h-3e-AVE" id="ErS-OL-YcU"/>
+                <outlet property="favoriteBook" destination="1IC-wv-MiS" id="y8R-aQ-RSY"/>
                 <outlet property="image" destination="qb7-o0-BhM" id="deI-pB-wuG"/>
                 <outlet property="nameBook" destination="cqi-aD-tgs" id="bYX-4B-hDf"/>
                 <outlet property="tagsBook" destination="x1m-WX-Uhe" id="nOs-oS-EGV"/>
@@ -68,6 +69,9 @@
                         <constraint firstAttribute="width" constant="49" id="ItR-aH-C4p"/>
                         <constraint firstAttribute="height" constant="31" id="Mph-ec-sob"/>
                     </constraints>
+                    <connections>
+                        <action selector="markFavorite:" destination="-1" eventType="valueChanged" id="5fV-By-DR1"/>
+                    </connections>
                 </switch>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpm-RI-5Vu">
                     <rect key="frame" x="465" y="555" width="76" height="37"/>

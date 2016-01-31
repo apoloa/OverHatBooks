@@ -7,6 +7,10 @@
 //
 
 #import "APAnnotationsCollectionViewController.h"
+#import "APAnnotation.h"
+#import "APAnnotationCollectionViewCell.h"
+#import "APAnnotationViewController.h"
+#import "UIViewController+Navigation.h"
 
 static NSString *cellId = @"AnnotationCellId";
 
@@ -44,6 +48,22 @@ static NSString *cellId = @"AnnotationCellId";
     
     [self.collectionView registerNib:nib
           forCellWithReuseIdentifier:cellId];
+}
+
+-(UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    APAnnotation *annotation = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    APAnnotationCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
+    
+    [cell configureCellWithAnnotation:annotation];
+    return cell;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    APAnnotation *annotation = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    APAnnotationViewController *annotationVC = [[APAnnotationViewController alloc] initWithAnnotation:annotation];
+    [self presentViewController:[annotationVC wrappedInNavigation] animated:YES completion:nil];
 }
 
 @end

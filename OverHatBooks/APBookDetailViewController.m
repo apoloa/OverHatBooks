@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     if (self.book.coverImage.imageData != nil) {
         UIImage *img = [UIImage imageWithData:self.book.coverImage.imageData];
         self.image.image = img;
@@ -31,14 +32,14 @@
     self.title = self.book.name;
     self.nameBook.text = self.book.name;
     self.authorBook.text = [self.book authorsJoinedByString:@", "];
-    self.tagsBook.text = [self.book tagsJoinedByString:@", "];
+    self.tagsBook.text = [self.book tagsJoinedByStringWithoutFavorite:@", "];
+    if([self.book isFavoriteBook]){
+        [self.favoriteBook setOn:NO animated:YES];
+    }else{
+        [self.favoriteBook setOn:YES animated:YES];
+    }
     [self configureShowAnnotations];
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(instancetype) initWithBook:(APBook*) aBook{
@@ -46,6 +47,13 @@
         _book = aBook;
     }
     return self;
+}
+- (IBAction)markFavorite:(id)sender {
+    if(self.favoriteBook.isOn){
+        [self.book addFavoriteTag];
+    }else{
+        [self.book removeFavoriteTag];
+    }
 }
 
 -(void) configureShowAnnotations{
@@ -65,7 +73,7 @@
     NSSortDescriptor *nameSort = [NSSortDescriptor sortDescriptorWithKey:APAnnotationAttributes.name ascending:YES];
     
     req.sortDescriptors = @[nameSort];
-    
+    req.predicate = [NSPredicate predicateWithFormat:@"book == %@", self.book];
     NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
                                                                          managedObjectContext:self.book.managedObjectContext
                                                                            sectionNameKeyPath:nil

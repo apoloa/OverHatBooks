@@ -12,5 +12,10 @@
                                context:(NSManagedObjectContext *) context;
 -(NSString *) authorsJoinedByString:(NSString*)separator;
 -(NSString *) tagsJoinedByString:(NSString*)separator;
+-(NSString *) tagsJoinedByStringWithoutFavorite:(NSString*)separator;
+
+-(void) addFavoriteTag;
+-(void) removeFavoriteTag;
+-(BOOL) isFavoriteBook;
 
 @end

@@ -13,6 +13,6 @@
 @interface APPDFBookViewController : UIViewController <NSURLSessionDownloadDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *pdfViewer;
 
--(instancetype) initWithBook:(APBook*)aBook;
+-(id)initWithBook:(APBook*)aBook;
 
 @end

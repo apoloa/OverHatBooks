@@ -53,8 +53,15 @@
 		205AFFBA1C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFB81C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib */; };
 		205AFFBE1C5D1F810063CC1F /* APPDFBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFBC1C5D1F810063CC1F /* APPDFBookViewController.m */; };
 		205AFFBF1C5D1F810063CC1F /* APPDFBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFBD1C5D1F810063CC1F /* APPDFBookViewController.xib */; };
-		205AFFC61C5E39CF0063CC1F /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFC31C5E39CF0063CC1F /* TPPropertyAnimation.m */; };
-		205AFFC71C5E39CF0063CC1F /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFC51C5E39CF0063CC1F /* KAProgressLabel.m */; };
+		205AFFCB1C5E6DD40063CC1F /* APAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFC91C5E6DD40063CC1F /* APAnnotationViewController.m */; };
+		205AFFCC1C5E6DD40063CC1F /* APAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFCA1C5E6DD40063CC1F /* APAnnotationViewController.xib */; };
+		205AFFCE1C5E6FA00063CC1F /* placeholder_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFCD1C5E6FA00063CC1F /* placeholder_image.png */; };
+		205AFFD11C5E801D0063CC1F /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFD01C5E801D0063CC1F /* NSString+Validation.m */; };
+		205AFFD81C5E884F0063CC1F /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFD31C5E884F0063CC1F /* UIImage+Alpha.m */; };
+		205AFFD91C5E884F0063CC1F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFD51C5E884F0063CC1F /* UIImage+Resize.m */; };
+		205AFFDA1C5E884F0063CC1F /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFD71C5E884F0063CC1F /* UIImage+RoundedCorner.m */; };
+		205AFFE71C5E9FF90063CC1F /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFE41C5E9FF90063CC1F /* KAProgressLabel.m */; };
+		205AFFE81C5E9FF90063CC1F /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFE61C5E9FF90063CC1F /* TPPropertyAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,10 +166,22 @@
 		205AFFBB1C5D1F810063CC1F /* APPDFBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFBookViewController.h; sourceTree = "<group>"; };
 		205AFFBC1C5D1F810063CC1F /* APPDFBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPDFBookViewController.m; sourceTree = "<group>"; };
 		205AFFBD1C5D1F810063CC1F /* APPDFBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPDFBookViewController.xib; sourceTree = "<group>"; };
-		205AFFC21C5E39CF0063CC1F /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPropertyAnimation.h; path = "../../../../../Downloads/kirualex-KAProgressLabel-f5c6c6a/KAProgressLabel/TPPropertyAnimation.h"; sourceTree = "<group>"; };
-		205AFFC31C5E39CF0063CC1F /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPropertyAnimation.m; path = "../../../../../Downloads/kirualex-KAProgressLabel-f5c6c6a/KAProgressLabel/TPPropertyAnimation.m"; sourceTree = "<group>"; };
-		205AFFC41C5E39CF0063CC1F /* KAProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KAProgressLabel.h; path = "../../../../../Downloads/kirualex-KAProgressLabel-f5c6c6a/KAProgressLabel/KAProgressLabel.h"; sourceTree = "<group>"; };
-		205AFFC51C5E39CF0063CC1F /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KAProgressLabel.m; path = "../../../../../Downloads/kirualex-KAProgressLabel-f5c6c6a/KAProgressLabel/KAProgressLabel.m"; sourceTree = "<group>"; };
+		205AFFC81C5E6DD40063CC1F /* APAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotationViewController.h; sourceTree = "<group>"; };
+		205AFFC91C5E6DD40063CC1F /* APAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAnnotationViewController.m; sourceTree = "<group>"; };
+		205AFFCA1C5E6DD40063CC1F /* APAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APAnnotationViewController.xib; sourceTree = "<group>"; };
+		205AFFCD1C5E6FA00063CC1F /* placeholder_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder_image.png; path = ../../../../../Downloads/placeholder_image.png; sourceTree = "<group>"; };
+		205AFFCF1C5E801D0063CC1F /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
+		205AFFD01C5E801D0063CC1F /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validation.m"; sourceTree = "<group>"; };
+		205AFFD21C5E884F0063CC1F /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		205AFFD31C5E884F0063CC1F /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		205AFFD41C5E884F0063CC1F /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		205AFFD51C5E884F0063CC1F /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		205AFFD61C5E884F0063CC1F /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		205AFFD71C5E884F0063CC1F /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		205AFFE31C5E9FF90063CC1F /* KAProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAProgressLabel.h; sourceTree = "<group>"; };
+		205AFFE41C5E9FF90063CC1F /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAProgressLabel.m; sourceTree = "<group>"; };
+		205AFFE51C5E9FF90063CC1F /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPropertyAnimation.h; sourceTree = "<group>"; };
+		205AFFE61C5E9FF90063CC1F /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPropertyAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,12 +212,20 @@
 		200DB1FC1C580E60004B0EC8 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				205AFFD21C5E884F0063CC1F /* UIImage+Alpha.h */,
+				205AFFD31C5E884F0063CC1F /* UIImage+Alpha.m */,
+				205AFFD41C5E884F0063CC1F /* UIImage+Resize.h */,
+				205AFFD51C5E884F0063CC1F /* UIImage+Resize.m */,
+				205AFFD61C5E884F0063CC1F /* UIImage+RoundedCorner.h */,
+				205AFFD71C5E884F0063CC1F /* UIImage+RoundedCorner.m */,
 				200DB1FD1C580EC4004B0EC8 /* UIViewController+Navigation.h */,
 				200DB1FE1C580EC4004B0EC8 /* UIViewController+Navigation.m */,
 				200DB2691C5986EF004B0EC8 /* NSString+Tokenize.h */,
 				200DB26A1C5986EF004B0EC8 /* NSString+Tokenize.m */,
 				205AFFA51C5D17370063CC1F /* UIImage+Color.h */,
 				205AFFA61C5D17370063CC1F /* UIImage+Color.m */,
+				205AFFCF1C5E801D0063CC1F /* NSString+Validation.h */,
+				205AFFD01C5E801D0063CC1F /* NSString+Validation.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -206,6 +233,7 @@
 		200DB2001C581893004B0EC8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				205AFFCD1C5E6FA00063CC1F /* placeholder_image.png */,
 				200DB2781C5ABE9A004B0EC8 /* overhatbooks.png */,
 				200DB2491C583A6F004B0EC8 /* cover.png */,
 			);
@@ -352,21 +380,9 @@
 		204293C81C5803290040240B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */,
-				205AFFA91C5D1C760063CC1F /* AGTCoreDataCollectionViewController.h */,
-				204293CB1C5804370040240B /* AGTCoreDataTableViewController.h */,
-				204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */,
-				200DB2581C58468B004B0EC8 /* APBooksTableViewController.h */,
-				200DB2591C58468B004B0EC8 /* APBooksTableViewController.m */,
-				200DB25A1C58468B004B0EC8 /* APBooksTableViewController.xib */,
-				200DB2881C5CE733004B0EC8 /* APBookDetailViewController.h */,
-				200DB2891C5CE733004B0EC8 /* APBookDetailViewController.m */,
-				200DB28A1C5CE733004B0EC8 /* APBookDetailViewController.xib */,
-				205AFFAB1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.h */,
-				205AFFAC1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m */,
-				205AFFBB1C5D1F810063CC1F /* APPDFBookViewController.h */,
-				205AFFBC1C5D1F810063CC1F /* APPDFBookViewController.m */,
-				205AFFBD1C5D1F810063CC1F /* APPDFBookViewController.xib */,
+				205AFFEB1C5EA9B30063CC1F /* Books */,
+				205AFFEA1C5EA9AE0063CC1F /* Annotations */,
+				205AFFE91C5EA4BB0063CC1F /* Vendor */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -388,12 +404,51 @@
 		205AFFC11C5E39B80063CC1F /* VendorViews */ = {
 			isa = PBXGroup;
 			children = (
-				205AFFC21C5E39CF0063CC1F /* TPPropertyAnimation.h */,
-				205AFFC31C5E39CF0063CC1F /* TPPropertyAnimation.m */,
-				205AFFC41C5E39CF0063CC1F /* KAProgressLabel.h */,
-				205AFFC51C5E39CF0063CC1F /* KAProgressLabel.m */,
+				205AFFE31C5E9FF90063CC1F /* KAProgressLabel.h */,
+				205AFFE41C5E9FF90063CC1F /* KAProgressLabel.m */,
+				205AFFE51C5E9FF90063CC1F /* TPPropertyAnimation.h */,
+				205AFFE61C5E9FF90063CC1F /* TPPropertyAnimation.m */,
 			);
 			name = VendorViews;
+			sourceTree = "<group>";
+		};
+		205AFFE91C5EA4BB0063CC1F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */,
+				205AFFA91C5D1C760063CC1F /* AGTCoreDataCollectionViewController.h */,
+				204293CB1C5804370040240B /* AGTCoreDataTableViewController.h */,
+				204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		205AFFEA1C5EA9AE0063CC1F /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				205AFFAB1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.h */,
+				205AFFAC1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m */,
+				205AFFC81C5E6DD40063CC1F /* APAnnotationViewController.h */,
+				205AFFC91C5E6DD40063CC1F /* APAnnotationViewController.m */,
+				205AFFCA1C5E6DD40063CC1F /* APAnnotationViewController.xib */,
+			);
+			name = Annotations;
+			sourceTree = "<group>";
+		};
+		205AFFEB1C5EA9B30063CC1F /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				200DB2581C58468B004B0EC8 /* APBooksTableViewController.h */,
+				200DB2591C58468B004B0EC8 /* APBooksTableViewController.m */,
+				200DB25A1C58468B004B0EC8 /* APBooksTableViewController.xib */,
+				200DB2881C5CE733004B0EC8 /* APBookDetailViewController.h */,
+				200DB2891C5CE733004B0EC8 /* APBookDetailViewController.m */,
+				200DB28A1C5CE733004B0EC8 /* APBookDetailViewController.xib */,
+				205AFFBB1C5D1F810063CC1F /* APPDFBookViewController.h */,
+				205AFFBC1C5D1F810063CC1F /* APPDFBookViewController.m */,
+				205AFFBD1C5D1F810063CC1F /* APPDFBookViewController.xib */,
+			);
+			name = Books;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,8 +554,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205AFFCE1C5E6FA00063CC1F /* placeholder_image.png in Resources */,
 				200DB2461C5823CA004B0EC8 /* APBookTableViewCell.xib in Resources */,
 				2016FA011C558A2B00DB722B /* OverHatBooks.xml in Resources */,
+				205AFFCC1C5E6DD40063CC1F /* APAnnotationViewController.xib in Resources */,
 				200DB2871C5BF12A004B0EC8 /* Media.xcassets in Resources */,
 				200DB2771C5ABE14004B0EC8 /* Launch Screen.storyboard in Resources */,
 				200DB25C1C58468B004B0EC8 /* APBooksTableViewController.xib in Resources */,
@@ -536,31 +593,36 @@
 			files = (
 				204293A71C56B45F0040240B /* OverHatBooks.xcdatamodeld in Sources */,
 				200DB27F1C5AE1C5004B0EC8 /* _APTag.m in Sources */,
+				205AFFCB1C5E6DD40063CC1F /* APAnnotationViewController.m in Sources */,
+				205AFFD11C5E801D0063CC1F /* NSString+Validation.m in Sources */,
 				204293C21C56D0D40040240B /* APPhoto.m in Sources */,
 				204293BE1C56D0D40040240B /* APAnnotation.m in Sources */,
-				205AFFC71C5E39CF0063CC1F /* KAProgressLabel.m in Sources */,
 				200DB1FF1C580EC4004B0EC8 /* UIViewController+Navigation.m in Sources */,
 				204293B01C56D0C60040240B /* _APBook.m in Sources */,
 				204293BF1C56D0D40040240B /* APBook.m in Sources */,
 				200DB27E1C5AE1C5004B0EC8 /* _APBookTag.m in Sources */,
 				200DB26B1C5986EF004B0EC8 /* NSString+Tokenize.m in Sources */,
+				205AFFE71C5E9FF90063CC1F /* KAProgressLabel.m in Sources */,
 				200DB2851C5AE1D7004B0EC8 /* APTag.m in Sources */,
 				204293B21C56D0C60040240B /* _APPdfData.m in Sources */,
 				204293B11C56D0C60040240B /* _APCover.m in Sources */,
 				205AFFBE1C5D1F810063CC1F /* APPDFBookViewController.m in Sources */,
+				205AFFDA1C5E884F0063CC1F /* UIImage+RoundedCorner.m in Sources */,
 				200DB25B1C58468B004B0EC8 /* APBooksTableViewController.m in Sources */,
 				200DB2681C59866A004B0EC8 /* _APAuthor.m in Sources */,
+				205AFFD81C5E884F0063CC1F /* UIImage+Alpha.m in Sources */,
 				205AFFAD1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m in Sources */,
 				200DB2651C59865B004B0EC8 /* APAuthor.m in Sources */,
 				2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */,
 				200DB26E1C598CB2004B0EC8 /* APBaseManagedObject.m in Sources */,
+				205AFFD91C5E884F0063CC1F /* UIImage+Resize.m in Sources */,
+				205AFFE81C5E9FF90063CC1F /* TPPropertyAnimation.m in Sources */,
 				20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */,
 				200DB2611C59590F004B0EC8 /* APLibrary.m in Sources */,
 				200DB2451C5823CA004B0EC8 /* APBookTableViewCell.m in Sources */,
 				205AFFAA1C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m in Sources */,
 				2016F9CC1C5589C600DB722B /* main.m in Sources */,
 				204293B31C56D0C60040240B /* _APPhoto.m in Sources */,
-				205AFFC61C5E39CF0063CC1F /* TPPropertyAnimation.m in Sources */,
 				204293CA1C58042E0040240B /* AGTCoreDataTableViewController.m in Sources */,
 				204293C51C56D0EF0040240B /* _APAnnotation.m in Sources */,
 				205AFFA71C5D17370063CC1F /* UIImage+Color.m in Sources */,

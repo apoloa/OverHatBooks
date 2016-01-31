@@ -5,6 +5,7 @@
 #import "APBookTag.h"
 #import "APTag.h"
 #import "NSString+Tokenize.h"
+#import "Settings.h"
 
 @interface APBook ()
 
@@ -71,6 +72,36 @@
     return [tagsName componentsJoinedByString:separator];
 }
 
+-(NSString *) tagsJoinedByStringWithoutFavorite:(NSString*)separator{
+    NSArray *tags = [self.bookTags allObjects];
+    NSMutableArray *tagsName = [NSMutableArray new];
+    for(APBookTag *bookTag in tags){
+        if(![bookTag.tag.name isEqualToString:FAVORITE_TAG]){
+            [tagsName addObject:bookTag.tag.name];
+        }
+    }
+    return [tagsName componentsJoinedByString:separator];
+}
+
+-(BOOL) isFavoriteBook{
+    return ([[self tagsJoinedByString:@", "] rangeOfString:@"Favorite" options:NSCaseInsensitiveSearch].location == NSNotFound);
+}
+
+-(void) addFavoriteTag{
+    [self addBookTagsObject:[APBookTag bookTagWithName:FAVORITE_TAG Book:self context:self.managedObjectContext]];
+}
+-(void) removeFavoriteTag{
+    APBookTag *tagFavorite = nil;
+    for (APBookTag *tag in self.bookTags) {
+        if ([tag.tag.name isEqualToString:FAVORITE_TAG]){
+            tagFavorite = tag;
+            break;
+        }
+    }
+    if(tagFavorite != nil){
+        [self removeBookTagsObject:tagFavorite];
+    }
+}
 
 
 @end

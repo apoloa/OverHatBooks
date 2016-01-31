@@ -168,7 +168,7 @@
         NSFetchRequest *r = [NSFetchRequest fetchRequestWithEntityName:APBookTag.entityName];
         r.fetchBatchSize = 20;
         
-        NSSortDescriptor *tagName = [NSSortDescriptor sortDescriptorWithKey:@"tag.name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+        NSSortDescriptor *tagName = [NSSortDescriptor sortDescriptorWithKey:@"tag.proxyForSorting" ascending:YES selector:@selector(caseInsensitiveCompare:)];
         
         NSSortDescriptor *bookName = [NSSortDescriptor sortDescriptorWithKey:@"book.name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
         
