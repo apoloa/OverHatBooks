@@ -48,6 +48,13 @@
 		204293CA1C58042E0040240B /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */; };
 		205AFFA71C5D17370063CC1F /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFA61C5D17370063CC1F /* UIImage+Color.m */; };
 		205AFFAA1C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */; };
+		205AFFAD1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFAC1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m */; };
+		205AFFB91C5D1E300063CC1F /* APAnnotationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFB71C5D1E300063CC1F /* APAnnotationCollectionViewCell.m */; };
+		205AFFBA1C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFB81C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib */; };
+		205AFFBE1C5D1F810063CC1F /* APPDFBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFBC1C5D1F810063CC1F /* APPDFBookViewController.m */; };
+		205AFFBF1C5D1F810063CC1F /* APPDFBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFBD1C5D1F810063CC1F /* APPDFBookViewController.xib */; };
+		205AFFC61C5E39CF0063CC1F /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFC31C5E39CF0063CC1F /* TPPropertyAnimation.m */; };
+		205AFFC71C5E39CF0063CC1F /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFC51C5E39CF0063CC1F /* KAProgressLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +151,18 @@
 		205AFFA61C5D17370063CC1F /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataCollectionViewController.m; path = ../../../../../Desktop/AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
 		205AFFA91C5D1C760063CC1F /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataCollectionViewController.h; path = ../../../../../Desktop/AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
+		205AFFAB1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotationsCollectionViewController.h; sourceTree = "<group>"; };
+		205AFFAC1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAnnotationsCollectionViewController.m; sourceTree = "<group>"; };
+		205AFFB61C5D1E300063CC1F /* APAnnotationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotationCollectionViewCell.h; sourceTree = "<group>"; };
+		205AFFB71C5D1E300063CC1F /* APAnnotationCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAnnotationCollectionViewCell.m; sourceTree = "<group>"; };
+		205AFFB81C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APAnnotationCollectionViewCell.xib; sourceTree = "<group>"; };
+		205AFFBB1C5D1F810063CC1F /* APPDFBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFBookViewController.h; sourceTree = "<group>"; };
+		205AFFBC1C5D1F810063CC1F /* APPDFBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPDFBookViewController.m; sourceTree = "<group>"; };
+		205AFFBD1C5D1F810063CC1F /* APPDFBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPDFBookViewController.xib; sourceTree = "<group>"; };
+		205AFFC21C5E39CF0063CC1F /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPropertyAnimation.h; path = "../../../../../Downloads/kirualex-KAProgressLabel-f5c6c6a/KAProgressLabel/TPPropertyAnimation.h"; sourceTree = "<group>"; };
+		205AFFC31C5E39CF0063CC1F /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPropertyAnimation.m; path = "../../../../../Downloads/kirualex-KAProgressLabel-f5c6c6a/KAProgressLabel/TPPropertyAnimation.m"; sourceTree = "<group>"; };
+		205AFFC41C5E39CF0063CC1F /* KAProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KAProgressLabel.h; path = "../../../../../Downloads/kirualex-KAProgressLabel-f5c6c6a/KAProgressLabel/KAProgressLabel.h"; sourceTree = "<group>"; };
+		205AFFC51C5E39CF0063CC1F /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KAProgressLabel.m; path = "../../../../../Downloads/kirualex-KAProgressLabel-f5c6c6a/KAProgressLabel/KAProgressLabel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +236,7 @@
 		2016F9C91C5589C600DB722B /* OverHatBooks */ = {
 			isa = PBXGroup;
 			children = (
+				205AFFC01C5D39BA0063CC1F /* Views */,
 				200DB2861C5BF12A004B0EC8 /* Media.xcassets */,
 				200DB2001C581893004B0EC8 /* Resources */,
 				200DB1FC1C580E60004B0EC8 /* Categories */,
@@ -336,17 +356,44 @@
 				205AFFA91C5D1C760063CC1F /* AGTCoreDataCollectionViewController.h */,
 				204293CB1C5804370040240B /* AGTCoreDataTableViewController.h */,
 				204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */,
-				200DB2421C5823CA004B0EC8 /* APBookTableViewCell.h */,
-				200DB2431C5823CA004B0EC8 /* APBookTableViewCell.m */,
-				200DB2441C5823CA004B0EC8 /* APBookTableViewCell.xib */,
 				200DB2581C58468B004B0EC8 /* APBooksTableViewController.h */,
 				200DB2591C58468B004B0EC8 /* APBooksTableViewController.m */,
 				200DB25A1C58468B004B0EC8 /* APBooksTableViewController.xib */,
 				200DB2881C5CE733004B0EC8 /* APBookDetailViewController.h */,
 				200DB2891C5CE733004B0EC8 /* APBookDetailViewController.m */,
 				200DB28A1C5CE733004B0EC8 /* APBookDetailViewController.xib */,
+				205AFFAB1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.h */,
+				205AFFAC1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m */,
+				205AFFBB1C5D1F810063CC1F /* APPDFBookViewController.h */,
+				205AFFBC1C5D1F810063CC1F /* APPDFBookViewController.m */,
+				205AFFBD1C5D1F810063CC1F /* APPDFBookViewController.xib */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		205AFFC01C5D39BA0063CC1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				205AFFC11C5E39B80063CC1F /* VendorViews */,
+				200DB2421C5823CA004B0EC8 /* APBookTableViewCell.h */,
+				200DB2431C5823CA004B0EC8 /* APBookTableViewCell.m */,
+				200DB2441C5823CA004B0EC8 /* APBookTableViewCell.xib */,
+				205AFFB61C5D1E300063CC1F /* APAnnotationCollectionViewCell.h */,
+				205AFFB71C5D1E300063CC1F /* APAnnotationCollectionViewCell.m */,
+				205AFFB81C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		205AFFC11C5E39B80063CC1F /* VendorViews */ = {
+			isa = PBXGroup;
+			children = (
+				205AFFC21C5E39CF0063CC1F /* TPPropertyAnimation.h */,
+				205AFFC31C5E39CF0063CC1F /* TPPropertyAnimation.m */,
+				205AFFC41C5E39CF0063CC1F /* KAProgressLabel.h */,
+				205AFFC51C5E39CF0063CC1F /* KAProgressLabel.m */,
+			);
+			name = VendorViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +507,8 @@
 				200DB24A1C583A6F004B0EC8 /* cover.png in Resources */,
 				200DB2791C5ABE9A004B0EC8 /* overhatbooks.png in Resources */,
 				200DB28C1C5CE733004B0EC8 /* APBookDetailViewController.xib in Resources */,
+				205AFFBF1C5D1F810063CC1F /* APPDFBookViewController.xib in Resources */,
+				205AFFBA1C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib in Resources */,
 				2016FA031C558A5800DB722B /* OverHatBooks.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +538,7 @@
 				200DB27F1C5AE1C5004B0EC8 /* _APTag.m in Sources */,
 				204293C21C56D0D40040240B /* APPhoto.m in Sources */,
 				204293BE1C56D0D40040240B /* APAnnotation.m in Sources */,
+				205AFFC71C5E39CF0063CC1F /* KAProgressLabel.m in Sources */,
 				200DB1FF1C580EC4004B0EC8 /* UIViewController+Navigation.m in Sources */,
 				204293B01C56D0C60040240B /* _APBook.m in Sources */,
 				204293BF1C56D0D40040240B /* APBook.m in Sources */,
@@ -497,8 +547,10 @@
 				200DB2851C5AE1D7004B0EC8 /* APTag.m in Sources */,
 				204293B21C56D0C60040240B /* _APPdfData.m in Sources */,
 				204293B11C56D0C60040240B /* _APCover.m in Sources */,
+				205AFFBE1C5D1F810063CC1F /* APPDFBookViewController.m in Sources */,
 				200DB25B1C58468B004B0EC8 /* APBooksTableViewController.m in Sources */,
 				200DB2681C59866A004B0EC8 /* _APAuthor.m in Sources */,
+				205AFFAD1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m in Sources */,
 				200DB2651C59865B004B0EC8 /* APAuthor.m in Sources */,
 				2016F9CF1C5589C600DB722B /* AppDelegate.m in Sources */,
 				200DB26E1C598CB2004B0EC8 /* APBaseManagedObject.m in Sources */,
@@ -508,10 +560,12 @@
 				205AFFAA1C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m in Sources */,
 				2016F9CC1C5589C600DB722B /* main.m in Sources */,
 				204293B31C56D0C60040240B /* _APPhoto.m in Sources */,
+				205AFFC61C5E39CF0063CC1F /* TPPropertyAnimation.m in Sources */,
 				204293CA1C58042E0040240B /* AGTCoreDataTableViewController.m in Sources */,
 				204293C51C56D0EF0040240B /* _APAnnotation.m in Sources */,
 				205AFFA71C5D17370063CC1F /* UIImage+Color.m in Sources */,
 				204293C01C56D0D40040240B /* APCover.m in Sources */,
+				205AFFB91C5D1E300063CC1F /* APAnnotationCollectionViewCell.m in Sources */,
 				200DB28B1C5CE733004B0EC8 /* APBookDetailViewController.m in Sources */,
 				200DB2841C5AE1D7004B0EC8 /* APBookTag.m in Sources */,
 				204293C11C56D0D40040240B /* APPdfData.m in Sources */,
