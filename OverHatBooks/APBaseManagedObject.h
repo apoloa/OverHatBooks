@@ -16,4 +16,6 @@
                     forKey:(NSString *)key
     inManagedObjectContext:(NSManagedObjectContext *)context;
 
++ (NSArray *) observableKeys;
+
 @end

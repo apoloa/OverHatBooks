@@ -13,6 +13,9 @@
 @interface APAnnotationCollectionViewCell : UICollectionViewCell
 
 -(void) configureCellWithAnnotation:(APAnnotation *)aAnnotation;
+
+@property (strong, nonatomic) APAnnotation *annotation;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleAnnotation;
 @property (weak, nonatomic) IBOutlet UIImageView *imageAnnotation;
 @property (weak, nonatomic) IBOutlet UITextView *textAnnotation;

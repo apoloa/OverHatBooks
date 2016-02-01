@@ -13,13 +13,18 @@
 #import "APPdfData.h"
 #import "KAProgressLabel.h"
 
+#import "APDownloadManager.h"
+#import "APDownloadItem.h"
+#import "APDownloadDelegate.h"
+
 #import "UIViewController+Navigation.h"
 #import "UIImage+Color.h"
 
-@interface APPDFBookViewController ()
+static NSString *pdfIdentifier = @"pdfIdentifier";
+
+@interface APPDFBookViewController () <APDownloadDelegate>
 @property(nonatomic, strong) APBook *book;
 @property (weak,nonatomic) IBOutlet KAProgressLabel * pLabel;
-@property (nonatomic, strong) NSURLSessionDownloadTask *task;
 @end
 
 @implementation APPDFBookViewController
@@ -27,32 +32,48 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    if(self.book.pdfData.pdfData != nil){
-        [self loadBook];
-    }else{
-        self.pdfViewer.hidden = YES;
-        [self configureProgressLabel];
-        NSURL *url = [NSURL URLWithString:self.book.urlPDF];
-        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:self.book.name];
-        NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:[NSOperationQueue new]];
-        self.task = [session downloadTaskWithURL:url];
-        [self.task resume];
-    }
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
     UIBarButtonItem *add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                          target:self
                                                                          action:@selector(addAnnotation)];
     self.navigationItem.rightBarButtonItem = add;
+    
+    if(self.book.pdfData.pdfData != nil){
+        [self loadBook];
+    }else{
+        
+        self.pdfViewer.hidden = YES;
+        [self configureProgressLabel];
+        
+        APDownloadManager *downManager = [APDownloadManager sharedInstance];
+        APDownloadItem *task = [downManager containsTaskWithIdentifier:self.book.name];
+        if (task == nil) {
+            //Download
+            NSURL *url = [NSURL URLWithString:self.book.urlPDF];
+            [downManager addNewTaskWithURL:url delegate:self identifier:self.book.name completionBlock:^(NSData *data, NSError *err) {
+                if(err == nil){
+                    self.book.pdfData.pdfData = data;
+                    [self loadViewData:data];
+                }
+                
+            }];
+        }else{
+            //ProgressDownload
+            task.delegate = self;
+            [self setProgress:task.progress];
+        }
+    }
+    
 }
+
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    if (!self.book.pdfData.pdfData) {
-        [self.task cancel];
-        
-    }
 }
 
 -(id)initWithBook:(APBook*)aBook{
@@ -65,13 +86,25 @@
 -(void)addAnnotation{
     APAnnotationViewController *annotationVC = [[APAnnotationViewController alloc] initWithBook:self.book];
     
-    [self presentViewController:[annotationVC wrappedInNavigation] animated:YES completion:nil];
+    [self.navigationController pushViewController:annotationVC animated:YES];
 }
+
+-(void)loadViewData:(NSData*)data{
+    self.pdfViewer.hidden = NO;
+    self.pLabel.hidden = true;
+    [self.pdfViewer loadData:data MIMEType:@"application/pdf" textEncodingName:@"utf-8" baseURL:[NSURL new]];
+}
+
 
 -(void)loadBook{
     self.pdfViewer.hidden = NO;
     self.pLabel.hidden = true;
     [self.pdfViewer loadData:self.book.pdfData.pdfData MIMEType:@"application/pdf" textEncodingName:@"utf-8" baseURL:[NSURL new]];
+}
+
+-(void)setProgress:(float) progress{
+    [self.pLabel setText:[NSString stringWithFormat:@"%0.0f", progress*100]];
+    [self.pLabel setEndDegree:progress*360];
 }
 
 -(void)configureProgressLabel{
@@ -88,28 +121,16 @@
 }
 
 
-
-- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
-didFinishDownloadingToURL:(NSURL *)location{
-    NSData *data = [NSData dataWithContentsOfURL:location];
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.book.pdfData.pdfData = data;
-        [self loadBook];
-    });
-    [session finishTasksAndInvalidate];
+-(void) bookDownloaded:(NSURL*)location{
+   
+    //[self loadBook];
 }
 
 
-- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
-      didWriteData:(int64_t)bytesWritten
- totalBytesWritten:(int64_t)totalBytesWritten
-totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite{
-    float bytesWrittenFloat = (float) totalBytesWritten;
-    float totalBytesExprededToWriteFloat = (float) totalBytesExpectedToWrite;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.pLabel setText:[NSString stringWithFormat:@"%0.0f", (bytesWrittenFloat/totalBytesExprededToWriteFloat)*100]];
-        [self.pLabel setEndDegree:(bytesWrittenFloat/totalBytesExprededToWriteFloat)*360];
-    });
+-(void) BookDownloadProgress:(float)progress{
+    [self setProgress:progress];
 }
+
+
+
 @end

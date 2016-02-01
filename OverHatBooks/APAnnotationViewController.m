@@ -14,7 +14,7 @@
 #import "UIImage+Resize.h"
 
 
-@interface APAnnotationViewController () <UITextFieldDelegate, UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface APAnnotationViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (nonatomic, strong) APBook *book;
 @property (nonatomic, strong) UIImage *photo;
 @property (nonatomic, strong) APAnnotation *annotation;
@@ -94,13 +94,13 @@
             self.annotation.name = self.titleAnnotation.text;
             self.annotation.text = self.textAnnotation.text;
             self.annotation.photo.image = self.photo;
-            [self dismissViewControllerAnimated:YES completion:nil];
+            [self.navigationController popViewControllerAnimated:YES];
         }else{
             dispatch_async(dispatch_get_main_queue(), ^{
                 APAnnotation *annotation = [APAnnotation annotationOnBook:self.book withTitle:self.titleAnnotation.text text:self.textAnnotation.text photo:self.photo context:self.book.managedObjectContext];
                 
                 [self.book addAnnotationObject:annotation];
-                [self dismissViewControllerAnimated:YES completion:nil];
+                [self.navigationController popViewControllerAnimated:YES];
             });
             
         }
@@ -108,7 +108,7 @@
 }
 
 -(IBAction)cancel:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)addPhoto:(id)sender {
     if (!self.photo) {

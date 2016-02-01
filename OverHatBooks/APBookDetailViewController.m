@@ -58,10 +58,8 @@
 
 -(void) configureShowAnnotations{
     if (!self.navigationItem.rightBarButtonItem){
-        UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Annotations"
-                                                                   style:UIBarButtonItemStylePlain
-                                                                  target:self
-                                                                  action:@selector(showAnnotations)];
+        UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(showAnnotations)];
+                                   
         self.navigationItem.rightBarButtonItem = button;
     }
 }
@@ -70,9 +68,13 @@
     
     NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:APAnnotation.entityName];
     
+    NSSortDescriptor *creationSort = [NSSortDescriptor sortDescriptorWithKey:APAnnotationAttributes.creationDate ascending:YES];
+    
+    NSSortDescriptor *modificationSort = [NSSortDescriptor sortDescriptorWithKey:APAnnotationAttributes.modificationDate ascending:YES];
+    
     NSSortDescriptor *nameSort = [NSSortDescriptor sortDescriptorWithKey:APAnnotationAttributes.name ascending:YES];
     
-    req.sortDescriptors = @[nameSort];
+    req.sortDescriptors = @[creationSort, modificationSort, nameSort];
     req.predicate = [NSPredicate predicateWithFormat:@"book == %@", self.book];
     NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
                                                                          managedObjectContext:self.book.managedObjectContext
@@ -88,6 +90,7 @@
     
     APAnnotationsCollectionViewController *annotationVC = [APAnnotationsCollectionViewController coreDataCollectionViewControllerWithFetchedResultsController:fc
                                                                                                                                                        layout:layout];
+    annotationVC.book = self.book;
     
     [self.navigationController pushViewController:annotationVC animated:YES];
 }

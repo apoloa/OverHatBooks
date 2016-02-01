@@ -16,23 +16,28 @@
 #import "UIViewController+Navigation.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) APLibrary *model;
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    /*
-    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
-    [def setBool:NO forKey:IS_LIBRARY_LOADED];
     
-    */
     
-    APLibrary *model = [[APLibrary alloc] initWithDatabaseName:MODEL_NAME];
-     
+    self.model = [[APLibrary alloc] initWithDatabaseName:MODEL_NAME];
     
-    //[model.model zapAllData];
+    
+    
+    if(REMOVE_DATA){
+        NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+        [def setBool:NO forKey:IS_LIBRARY_LOADED];
+        
+        
+        
+        [self.model.model zapAllData];
+    }
+    
     
     NSFetchRequest *r = [NSFetchRequest fetchRequestWithEntityName:APBookTag.entityName];
     r.fetchBatchSize = 20;
@@ -43,13 +48,13 @@
     
     r.sortDescriptors = @[tagName, bookName];
     NSFetchedResultsController *fc = [[NSFetchedResultsController alloc]
-                                      initWithFetchRequest:r managedObjectContext:model.model.context
+                                      initWithFetchRequest:r managedObjectContext:self.model.model.context
                                       sectionNameKeyPath:@"tag.name"
                                       cacheName:nil];
     
     
     APBooksTableViewController *tVC = [[APBooksTableViewController alloc]initWithFetchedResultsController:fc
-                                                                                                  library:model
+                                                                                                  library:self.model
                                                                                                     style:UITableViewStyleGrouped];
     self.window = [[UIWindow alloc] initWithFrame:
                    [[UIScreen mainScreen] bounds]];
@@ -57,17 +62,39 @@
     self.window.rootViewController = [tVC wrappedInNavigation];
     
     [self.window makeKeyAndVisible];
+    [self autoSave];
     return YES;
+}
+
+-(void)save
+{
+    [self.model.model saveWithErrorBlock:^(NSError *error) {
+        NSLog(@"Saving error %s \n\n %@", __func__, error);
+    }];
+}
+
+
+- (void)autoSave{
+    if (AUTO_SAVE) {
+        NSLog(@"Autosaving....");
+        
+        [self save];
+        [self performSelector:@selector(autoSave)
+                   withObject:nil
+                   afterDelay:AUTO_SAVE_DELAY_IN_SECONDS];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    [self save];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [self save];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

@@ -103,5 +103,21 @@
     }
 }
 
+#pragma mark - KVO
+
++ (NSArray *) observableKeys{
+    return @[APBookRelationships.annotation, APBookRelationships.bookTags];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    
+    if ([keyPath isEqualToString:@"annotation"]) {
+        NSLog(@"Annotation did change");
+    } else if ([keyPath isEqualToString:@"bookTags"]) {
+        NSLog(@"Tag did change");
+    }
+}
+
+
 
 @end

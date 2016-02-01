@@ -27,4 +27,34 @@
     
     return annotation;
 }
+
+#pragma mark - Utils
+-(NSArray *) arrayOfElements{
+    
+    NSMutableArray *items = [NSMutableArray array];
+    if (self.name) {
+        [items addObject:self.name];
+    }
+    if(self.text){
+        [items addObject:self.text];
+    }
+    if(self.photo.image){
+        [items addObject:self.photo.image];
+    }
+    
+    return items;
+}
+
+#pragma mark - KVO
+
++ (NSArray *) observableKeys{
+    return @[APAnnotationRelationships.photo, APAnnotationAttributes.text, APAnnotationAttributes.name];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    self.modificationDate = [NSDate date];
+}
+
+
+
 @end

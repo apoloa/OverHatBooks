@@ -28,15 +28,8 @@
     
     return bookTag;
 }
-/*
--(NSComparisonResult)compare:(APBookTag*)other{
- 
-    static NSString *fav = @"Favorite";
-    if ([[self normalizedName] isEqualToString:[other normalizedName]]) { return NSOrderedSame;
-    }else if ([[self normalizedName] isEqualToString:fav]){ return NSOrderedAscending;
-    }else if ([[other normalizedName] isEqualToString:fav]){ return NSOrderedDescending;
-    }else{
-        return [self.name compare:other.normalizedName]; }
-}
-*/
+
+
+
+
 @end

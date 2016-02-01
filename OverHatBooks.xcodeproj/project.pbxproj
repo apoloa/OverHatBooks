@@ -62,6 +62,8 @@
 		205AFFDA1C5E884F0063CC1F /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFD71C5E884F0063CC1F /* UIImage+RoundedCorner.m */; };
 		205AFFE71C5E9FF90063CC1F /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFE41C5E9FF90063CC1F /* KAProgressLabel.m */; };
 		205AFFE81C5E9FF90063CC1F /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFE61C5E9FF90063CC1F /* TPPropertyAnimation.m */; };
+		205AFFEE1C5EE3140063CC1F /* APDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFED1C5EE3140063CC1F /* APDownloadManager.m */; };
+		205AFFF11C5EE49B0063CC1F /* APDownloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFF01C5EE49B0063CC1F /* APDownloadItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +184,12 @@
 		205AFFE41C5E9FF90063CC1F /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAProgressLabel.m; sourceTree = "<group>"; };
 		205AFFE51C5E9FF90063CC1F /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPropertyAnimation.h; sourceTree = "<group>"; };
 		205AFFE61C5E9FF90063CC1F /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPropertyAnimation.m; sourceTree = "<group>"; };
+		205AFFEC1C5EE3140063CC1F /* APDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDownloadManager.h; sourceTree = "<group>"; };
+		205AFFED1C5EE3140063CC1F /* APDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDownloadManager.m; sourceTree = "<group>"; };
+		205AFFEF1C5EE49B0063CC1F /* APDownloadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDownloadItem.h; sourceTree = "<group>"; };
+		205AFFF01C5EE49B0063CC1F /* APDownloadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDownloadItem.m; sourceTree = "<group>"; };
+		205AFFF21C5EE73A0063CC1F /* APDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDownloadDelegate.h; sourceTree = "<group>"; };
+		205AFFF31C5EEB3C0063CC1F /* APCompleteTaskDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCompleteTaskDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +335,12 @@
 				200DB2601C59590F004B0EC8 /* APLibrary.m */,
 				200DB26C1C598CB2004B0EC8 /* APBaseManagedObject.h */,
 				200DB26D1C598CB2004B0EC8 /* APBaseManagedObject.m */,
+				205AFFEC1C5EE3140063CC1F /* APDownloadManager.h */,
+				205AFFED1C5EE3140063CC1F /* APDownloadManager.m */,
+				205AFFEF1C5EE49B0063CC1F /* APDownloadItem.h */,
+				205AFFF01C5EE49B0063CC1F /* APDownloadItem.m */,
+				205AFFF21C5EE73A0063CC1F /* APDownloadDelegate.h */,
+				205AFFF31C5EEB3C0063CC1F /* APCompleteTaskDelegate.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -597,6 +611,7 @@
 				205AFFD11C5E801D0063CC1F /* NSString+Validation.m in Sources */,
 				204293C21C56D0D40040240B /* APPhoto.m in Sources */,
 				204293BE1C56D0D40040240B /* APAnnotation.m in Sources */,
+				205AFFEE1C5EE3140063CC1F /* APDownloadManager.m in Sources */,
 				200DB1FF1C580EC4004B0EC8 /* UIViewController+Navigation.m in Sources */,
 				204293B01C56D0C60040240B /* _APBook.m in Sources */,
 				204293BF1C56D0D40040240B /* APBook.m in Sources */,
@@ -631,6 +646,7 @@
 				200DB28B1C5CE733004B0EC8 /* APBookDetailViewController.m in Sources */,
 				200DB2841C5AE1D7004B0EC8 /* APBookTag.m in Sources */,
 				204293C11C56D0D40040240B /* APPdfData.m in Sources */,
+				205AFFF11C5EE49B0063CC1F /* APDownloadItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

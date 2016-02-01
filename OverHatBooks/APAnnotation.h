@@ -9,4 +9,6 @@
                             text:(NSString *)aText
                            photo:(UIImage *)aPhoto
                          context:(NSManagedObjectContext *)aContext;
+
+-(NSArray *) arrayOfElements;
 @end
