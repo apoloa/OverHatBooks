@@ -34,7 +34,7 @@
 -(void) startDownload:(NSURL *) url{
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:self.identifier];
 
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:[NSOperationQueue new]];
     NSURLSessionDownloadTask *task = [session downloadTaskWithURL:url];
     [task resume];
 }
