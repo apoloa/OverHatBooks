@@ -19,12 +19,10 @@
 		200DB26B1C5986EF004B0EC8 /* NSString+Tokenize.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB26A1C5986EF004B0EC8 /* NSString+Tokenize.m */; };
 		200DB26E1C598CB2004B0EC8 /* APBaseManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB26D1C598CB2004B0EC8 /* APBaseManagedObject.m */; };
 		200DB2771C5ABE14004B0EC8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200DB2761C5ABE14004B0EC8 /* Launch Screen.storyboard */; };
-		200DB2791C5ABE9A004B0EC8 /* overhatbooks.png in Resources */ = {isa = PBXBuildFile; fileRef = 200DB2781C5ABE9A004B0EC8 /* overhatbooks.png */; };
 		200DB27E1C5AE1C5004B0EC8 /* _APBookTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB27B1C5AE1C5004B0EC8 /* _APBookTag.m */; };
 		200DB27F1C5AE1C5004B0EC8 /* _APTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB27D1C5AE1C5004B0EC8 /* _APTag.m */; };
 		200DB2841C5AE1D7004B0EC8 /* APBookTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2811C5AE1D7004B0EC8 /* APBookTag.m */; };
 		200DB2851C5AE1D7004B0EC8 /* APTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2831C5AE1D7004B0EC8 /* APTag.m */; };
-		200DB2871C5BF12A004B0EC8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200DB2861C5BF12A004B0EC8 /* Media.xcassets */; };
 		200DB28B1C5CE733004B0EC8 /* APBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200DB2891C5CE733004B0EC8 /* APBookDetailViewController.m */; };
 		200DB28C1C5CE733004B0EC8 /* APBookDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200DB28A1C5CE733004B0EC8 /* APBookDetailViewController.xib */; };
 		2016F9CC1C5589C600DB722B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016F9CB1C5589C600DB722B /* main.m */; };
@@ -47,7 +45,6 @@
 		204293C51C56D0EF0040240B /* _APAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293C41C56D0EF0040240B /* _APAnnotation.m */; };
 		204293CA1C58042E0040240B /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */; };
 		205AFFA71C5D17370063CC1F /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFA61C5D17370063CC1F /* UIImage+Color.m */; };
-		205AFFAA1C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */; };
 		205AFFAD1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFAC1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m */; };
 		205AFFB91C5D1E300063CC1F /* APAnnotationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFB71C5D1E300063CC1F /* APAnnotationCollectionViewCell.m */; };
 		205AFFBA1C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFB81C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib */; };
@@ -55,7 +52,6 @@
 		205AFFBF1C5D1F810063CC1F /* APPDFBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFBD1C5D1F810063CC1F /* APPDFBookViewController.xib */; };
 		205AFFCB1C5E6DD40063CC1F /* APAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFC91C5E6DD40063CC1F /* APAnnotationViewController.m */; };
 		205AFFCC1C5E6DD40063CC1F /* APAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFCA1C5E6DD40063CC1F /* APAnnotationViewController.xib */; };
-		205AFFCE1C5E6FA00063CC1F /* placeholder_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 205AFFCD1C5E6FA00063CC1F /* placeholder_image.png */; };
 		205AFFD11C5E801D0063CC1F /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFD01C5E801D0063CC1F /* NSString+Validation.m */; };
 		205AFFD81C5E884F0063CC1F /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFD31C5E884F0063CC1F /* UIImage+Alpha.m */; };
 		205AFFD91C5E884F0063CC1F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFD51C5E884F0063CC1F /* UIImage+Resize.m */; };
@@ -64,6 +60,10 @@
 		205AFFE81C5E9FF90063CC1F /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFE61C5E9FF90063CC1F /* TPPropertyAnimation.m */; };
 		205AFFEE1C5EE3140063CC1F /* APDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFED1C5EE3140063CC1F /* APDownloadManager.m */; };
 		205AFFF11C5EE49B0063CC1F /* APDownloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AFFF01C5EE49B0063CC1F /* APDownloadItem.m */; };
+		20B162151C5F6CBF0083AA8C /* overhatbooks.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B162141C5F6CBF0083AA8C /* overhatbooks.png */; };
+		20B162171C5F6CD10083AA8C /* placeholder_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B162161C5F6CD10083AA8C /* placeholder_image.png */; };
+		20B162191C5F6CF60083AA8C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B162181C5F6CF60083AA8C /* Media.xcassets */; };
+		20B1621C1C5F6D190083AA8C /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B1621B1C5F6D190083AA8C /* AGTCoreDataCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +105,6 @@
 		200DB26C1C598CB2004B0EC8 /* APBaseManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBaseManagedObject.h; sourceTree = "<group>"; };
 		200DB26D1C598CB2004B0EC8 /* APBaseManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBaseManagedObject.m; sourceTree = "<group>"; };
 		200DB2761C5ABE14004B0EC8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		200DB2781C5ABE9A004B0EC8 /* overhatbooks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overhatbooks.png; path = ../../../../../Desktop/overhatbooks.png; sourceTree = "<group>"; };
 		200DB27A1C5AE1C5004B0EC8 /* _APBookTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APBookTag.h; sourceTree = "<group>"; };
 		200DB27B1C5AE1C5004B0EC8 /* _APBookTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APBookTag.m; sourceTree = "<group>"; };
 		200DB27C1C5AE1C5004B0EC8 /* _APTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APTag.h; sourceTree = "<group>"; };
@@ -114,7 +113,6 @@
 		200DB2811C5AE1D7004B0EC8 /* APBookTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBookTag.m; sourceTree = "<group>"; };
 		200DB2821C5AE1D7004B0EC8 /* APTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTag.h; sourceTree = "<group>"; };
 		200DB2831C5AE1D7004B0EC8 /* APTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTag.m; sourceTree = "<group>"; };
-		200DB2861C5BF12A004B0EC8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../../../../Desktop/Media.xcassets; sourceTree = "<group>"; };
 		200DB2881C5CE733004B0EC8 /* APBookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBookDetailViewController.h; sourceTree = "<group>"; };
 		200DB2891C5CE733004B0EC8 /* APBookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBookDetailViewController.m; sourceTree = "<group>"; };
 		200DB28A1C5CE733004B0EC8 /* APBookDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APBookDetailViewController.xib; sourceTree = "<group>"; };
@@ -158,8 +156,6 @@
 		204293CB1C5804370040240B /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
 		205AFFA51C5D17370063CC1F /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		205AFFA61C5D17370063CC1F /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
-		205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataCollectionViewController.m; path = ../../../../../Desktop/AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
-		205AFFA91C5D1C760063CC1F /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataCollectionViewController.h; path = ../../../../../Desktop/AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
 		205AFFAB1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotationsCollectionViewController.h; sourceTree = "<group>"; };
 		205AFFAC1C5D1D1C0063CC1F /* APAnnotationsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAnnotationsCollectionViewController.m; sourceTree = "<group>"; };
 		205AFFB61C5D1E300063CC1F /* APAnnotationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotationCollectionViewCell.h; sourceTree = "<group>"; };
@@ -171,7 +167,6 @@
 		205AFFC81C5E6DD40063CC1F /* APAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotationViewController.h; sourceTree = "<group>"; };
 		205AFFC91C5E6DD40063CC1F /* APAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAnnotationViewController.m; sourceTree = "<group>"; };
 		205AFFCA1C5E6DD40063CC1F /* APAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APAnnotationViewController.xib; sourceTree = "<group>"; };
-		205AFFCD1C5E6FA00063CC1F /* placeholder_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder_image.png; path = ../../../../../Downloads/placeholder_image.png; sourceTree = "<group>"; };
 		205AFFCF1C5E801D0063CC1F /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
 		205AFFD01C5E801D0063CC1F /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validation.m"; sourceTree = "<group>"; };
 		205AFFD21C5E884F0063CC1F /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
@@ -190,6 +185,11 @@
 		205AFFF01C5EE49B0063CC1F /* APDownloadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDownloadItem.m; sourceTree = "<group>"; };
 		205AFFF21C5EE73A0063CC1F /* APDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDownloadDelegate.h; sourceTree = "<group>"; };
 		205AFFF31C5EEB3C0063CC1F /* APCompleteTaskDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCompleteTaskDelegate.h; sourceTree = "<group>"; };
+		20B162141C5F6CBF0083AA8C /* overhatbooks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overhatbooks.png; sourceTree = "<group>"; };
+		20B162161C5F6CD10083AA8C /* placeholder_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_image.png; sourceTree = "<group>"; };
+		20B162181C5F6CF60083AA8C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		20B1621A1C5F6D190083AA8C /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
+		20B1621B1C5F6D190083AA8C /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,8 +241,8 @@
 		200DB2001C581893004B0EC8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				205AFFCD1C5E6FA00063CC1F /* placeholder_image.png */,
-				200DB2781C5ABE9A004B0EC8 /* overhatbooks.png */,
+				20B162161C5F6CD10083AA8C /* placeholder_image.png */,
+				20B162141C5F6CBF0083AA8C /* overhatbooks.png */,
 				200DB2491C583A6F004B0EC8 /* cover.png */,
 			);
 			name = Resources;
@@ -273,7 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				205AFFC01C5D39BA0063CC1F /* Views */,
-				200DB2861C5BF12A004B0EC8 /* Media.xcassets */,
+				20B162181C5F6CF60083AA8C /* Media.xcassets */,
 				200DB2001C581893004B0EC8 /* Resources */,
 				200DB1FC1C580E60004B0EC8 /* Categories */,
 				204293C81C5803290040240B /* Controllers */,
@@ -429,10 +429,10 @@
 		205AFFE91C5EA4BB0063CC1F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				205AFFA81C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m */,
-				205AFFA91C5D1C760063CC1F /* AGTCoreDataCollectionViewController.h */,
 				204293CB1C5804370040240B /* AGTCoreDataTableViewController.h */,
 				204293C91C58042E0040240B /* AGTCoreDataTableViewController.m */,
+				20B1621A1C5F6D190083AA8C /* AGTCoreDataCollectionViewController.h */,
+				20B1621B1C5F6D190083AA8C /* AGTCoreDataCollectionViewController.m */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -568,19 +568,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205AFFCE1C5E6FA00063CC1F /* placeholder_image.png in Resources */,
+				20B162171C5F6CD10083AA8C /* placeholder_image.png in Resources */,
 				200DB2461C5823CA004B0EC8 /* APBookTableViewCell.xib in Resources */,
+				20B162191C5F6CF60083AA8C /* Media.xcassets in Resources */,
 				2016FA011C558A2B00DB722B /* OverHatBooks.xml in Resources */,
 				205AFFCC1C5E6DD40063CC1F /* APAnnotationViewController.xib in Resources */,
-				200DB2871C5BF12A004B0EC8 /* Media.xcassets in Resources */,
 				200DB2771C5ABE14004B0EC8 /* Launch Screen.storyboard in Resources */,
 				200DB25C1C58468B004B0EC8 /* APBooksTableViewController.xib in Resources */,
 				200DB24A1C583A6F004B0EC8 /* cover.png in Resources */,
-				200DB2791C5ABE9A004B0EC8 /* overhatbooks.png in Resources */,
 				200DB28C1C5CE733004B0EC8 /* APBookDetailViewController.xib in Resources */,
 				205AFFBF1C5D1F810063CC1F /* APPDFBookViewController.xib in Resources */,
 				205AFFBA1C5D1E300063CC1F /* APAnnotationCollectionViewCell.xib in Resources */,
 				2016FA031C558A5800DB722B /* OverHatBooks.png in Resources */,
+				20B162151C5F6CBF0083AA8C /* overhatbooks.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +613,7 @@
 				204293BE1C56D0D40040240B /* APAnnotation.m in Sources */,
 				205AFFEE1C5EE3140063CC1F /* APDownloadManager.m in Sources */,
 				200DB1FF1C580EC4004B0EC8 /* UIViewController+Navigation.m in Sources */,
+				20B1621C1C5F6D190083AA8C /* AGTCoreDataCollectionViewController.m in Sources */,
 				204293B01C56D0C60040240B /* _APBook.m in Sources */,
 				204293BF1C56D0D40040240B /* APBook.m in Sources */,
 				200DB27E1C5AE1C5004B0EC8 /* _APBookTag.m in Sources */,
@@ -635,7 +636,6 @@
 				20337E431C5679DB00266670 /* AGTCoreDataStack.m in Sources */,
 				200DB2611C59590F004B0EC8 /* APLibrary.m in Sources */,
 				200DB2451C5823CA004B0EC8 /* APBookTableViewCell.m in Sources */,
-				205AFFAA1C5D1C760063CC1F /* AGTCoreDataCollectionViewController.m in Sources */,
 				2016F9CC1C5589C600DB722B /* main.m in Sources */,
 				204293B31C56D0C60040240B /* _APPhoto.m in Sources */,
 				204293CA1C58042E0040240B /* AGTCoreDataTableViewController.m in Sources */,
