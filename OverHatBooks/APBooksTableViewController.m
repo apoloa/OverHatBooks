@@ -14,8 +14,6 @@
 #import "Settings.h"
 #import "APBookDetailViewController.h"
 
-
-
 @interface APBooksTableViewController ()
 
 @property (nonatomic, strong) APLibrary *library;
@@ -119,7 +117,7 @@
     return book;
 }
 
-
+# pragma mark - Navigation Bar
 
 -(void)updateLeftSpinner{
     if(!self.navigationItem.leftBarButtonItem && self.libraryLoaded==NO){

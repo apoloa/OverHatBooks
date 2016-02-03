@@ -14,7 +14,7 @@
 @interface APDownloadItem : NSObject
 
 @property (nonatomic, strong) NSString *identifier;
-@property float progress;
+@property (nonatomic) float progress;
 @property (nonatomic, weak) id<APDownloadDelegate> delegate;
 @property (nonatomic, weak) id<APCompleteTaskDelegate> managerDelegate;
 

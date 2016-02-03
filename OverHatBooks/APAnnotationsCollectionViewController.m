@@ -65,6 +65,8 @@ static NSString *cellId = @"AnnotationCellId";
     return cell;
 }
 
+#pragma mark - Long Press Actions
+
 -(void) handleLongPress:(UILongPressGestureRecognizer *) gesture{
     APAnnotationCollectionViewCell *cell = (APAnnotationCollectionViewCell*) [gesture view];
     

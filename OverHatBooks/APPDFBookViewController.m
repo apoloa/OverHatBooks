@@ -89,6 +89,8 @@ static NSString *pdfIdentifier = @"pdfIdentifier";
     [self.navigationController pushViewController:annotationVC animated:YES];
 }
 
+#pragma mark - Load PDF
+
 -(void)loadViewData:(NSData*)data{
     self.pdfViewer.hidden = NO;
     self.pLabel.hidden = true;
@@ -101,6 +103,8 @@ static NSString *pdfIdentifier = @"pdfIdentifier";
     self.pLabel.hidden = true;
     [self.pdfViewer loadData:self.book.pdfData.pdfData MIMEType:@"application/pdf" textEncodingName:@"utf-8" baseURL:[NSURL new]];
 }
+
+#pragma mark - KAProgress
 
 -(void)setProgress:(float) progress{
     [self.pLabel setText:[NSString stringWithFormat:@"%0.0f", progress*100]];
@@ -120,6 +124,7 @@ static NSString *pdfIdentifier = @"pdfIdentifier";
     self.pLabel.isEndDegreeUserInteractive = NO;
 }
 
+#pragma mark - APDownloadDelegate
 
 -(void) bookDownloaded:(NSURL*)location{
    

@@ -10,6 +10,7 @@
 
 @implementation APBaseManagedObject
 
+# pragma mark - Init
 +(id)uniqueObjectWithValue:(id)value forKey:(NSString *)key
     inManagedObjectContext:(NSManagedObjectContext *)context{
     // Nos aseguramos que el contexto no sea nil para evitar errores
@@ -41,6 +42,7 @@
     return obj;
 }
 
+# pragma mark - Class Method
 + (NSString*)entityName {
     return @"";
 }

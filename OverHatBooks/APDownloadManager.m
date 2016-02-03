@@ -49,6 +49,7 @@
 }
 
 #pragma mark - APCompleteTaskDelegate
+
 -(void) finishTask:(NSString*)identifier{
     APDownloadItem *item = [self containsTaskWithIdentifier:identifier];
     if (item != nil) {

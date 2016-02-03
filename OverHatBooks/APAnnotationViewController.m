@@ -6,18 +6,23 @@
 //  Copyright © 2016 Adrian Polo Alcaide. All rights reserved.
 //
 
+// Header Class
 #import "APAnnotationViewController.h"
+// Core Data
 #import "APBook.h"
 #import "APAnnotation.h"
 #import "APPhoto.h"
+// Categories
 #import "NSString+Validation.h"
 #import "UIImage+Resize.h"
 
 
 @interface APAnnotationViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
 @property (nonatomic, strong) APBook *book;
 @property (nonatomic, strong) UIImage *photo;
 @property (nonatomic, strong) APAnnotation *annotation;
+
 @end
 
 @implementation APAnnotationViewController

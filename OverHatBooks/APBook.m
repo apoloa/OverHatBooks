@@ -1,10 +1,13 @@
 #import "APBook.h"
+// Core Data
 #import "APCover.h"
 #import "APPdfData.h"
 #import "APAuthor.h"
 #import "APBookTag.h"
 #import "APTag.h"
+// Categorires
 #import "NSString+Tokenize.h"
+// Settings
 #import "Settings.h"
 
 @interface APBook ()
@@ -15,7 +18,7 @@
 
 @implementation APBook
 
-// Custom logic goes here.
+#pragma mark - Init
 +(instancetype) bookWithName:(NSString*) name
                         urlImage:(NSString *) image
                           urlPDF:(NSString *) pdf
@@ -31,6 +34,7 @@
     return b;
     
 }
+
 
 +(instancetype) bookWithJSONDictionary:(NSDictionary *) dict
                                context:(NSManagedObjectContext *) context{
@@ -54,6 +58,7 @@
     return b;
 }
 
+#pragma mark - Utils
 
 -(NSString *) authorsJoinedByString:(NSString*)separator{
     NSArray *authors = [self.authors allObjects];
@@ -71,6 +76,7 @@
     }
     return [tagsName componentsJoinedByString:separator];
 }
+
 
 -(NSString *) tagsJoinedByStringWithoutFavorite:(NSString*)separator{
     NSArray *tags = [self.bookTags allObjects];

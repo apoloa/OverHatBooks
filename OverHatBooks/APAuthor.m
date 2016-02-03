@@ -8,9 +8,10 @@
 
 @implementation APAuthor
 
-// Custom logic goes here.
 
 
+
+#pragma mark - Init
 +(instancetype) authorWithName:(NSString *)name
                        context:(NSManagedObjectContext *)context{
     APAuthor *author = [self uniqueObjectWithValue:[name capitalizedString]

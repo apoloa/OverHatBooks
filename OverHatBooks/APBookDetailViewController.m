@@ -5,11 +5,13 @@
 //  Created by Adrian Polo Alcaide on 30/01/16.
 //  Copyright © 2016 Adrian Polo Alcaide. All rights reserved.
 //
-
+// Controllers
 #import "APBookDetailViewController.h"
 #import "APAnnotationsCollectionViewController.h"
 #import "APPDFBookViewController.h"
+// Categories
 #import "UIImage+Color.h"
+// Core Data
 #import "APBook.h"
 #import "APCover.h"
 #import "APBookTag.h"
@@ -55,6 +57,8 @@
         [self.book removeFavoriteTag];
     }
 }
+
+# pragma mark - Navigation Bar
 
 -(void) configureShowAnnotations{
     if (!self.navigationItem.rightBarButtonItem){

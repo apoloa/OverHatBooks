@@ -11,7 +11,9 @@
 #import "APCompleteTaskDelegate.h"
 
 @interface APDownloadItem () <NSURLSessionDownloadDelegate>
+
 @property (nonatomic,copy)void (^completionBlock)(NSData * path, NSError *err);
+
 @end
 
 @implementation APDownloadItem
@@ -39,6 +41,7 @@
     [task resume];
 }
 
+#pragma mark - NSURLSessionDownloadDelegate
 
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
 didFinishDownloadingToURL:(NSURL *)location{

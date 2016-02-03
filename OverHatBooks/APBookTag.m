@@ -10,7 +10,8 @@
 
 @implementation APBookTag
 
-// Custom logic goes here.
+
+#pragma mark - Init
 +(instancetype) bookTagWithBook:(APBook*) book Tag:(APTag*)tag context:(NSManagedObjectContext*) context{
     APBookTag *bookTag = [APBookTag insertInManagedObjectContext:context];
     bookTag.book = book;
